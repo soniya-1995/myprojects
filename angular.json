@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "trivago"
+    }
+  },
+  "defaultProject": "trivago",
+  "cli": {
+    "analytics": "a9699679-1daf-4ef4-954f-9f0d271dc312"
+  }
 }

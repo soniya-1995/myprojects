@@ -1,0 +1,227 @@
+.uk-alert-danger{
+    color: #333;
+    width: 1100px;
+}
+.enter{
+    width: 200px;
+    height: 5vh;    
+}
+.check{
+    width: 200px;
+    height: 5vh;
+}
+.uk-panel{
+    line-break: 1.0;
+    line-height: 0px;
+}
+.uk-flex{
+    align-items: center;
+    width:auto;
+    height:auto;
+}
+
+.uk-flex--wrap{
+    width: 23vh;
+    height: auto;
+}
+
+strong {
+    font-weight: bolder;
+    line-height: 0px;
+}
+.uk-child{
+    background-color: white;
+    size: 200;
+}
+.uk-divider-vertical{
+    height: 40px;
+}
+
+[class*=uk-divider] {
+    border: none;
+    margin-bottom: -41px;
+}
+
+.destination{
+    height: auto;
+    width: auto;
+}
+
+.uk-h4, h4 {
+    padding: 0px;
+    border-block:auto;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+.rate{
+    padding-top: 10px;
+}
+
+.uk-background{
+    width: 20vh;
+    height: 20vh;
+}
+
+.uk-card-default{
+    padding-top: 50px;
+}
+
+
+.uk-card-body{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font: 100;
+    color: black;
+}
+.dest{
+    font: outline;
+    color: rgb(120, 160, 247);
+}
+
+.hotel{
+    font: outline;
+    color: rgb(11, 15, 20);
+}
+.date{
+    background: rgb(130, 131, 131);
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+    
+  }
+
+.uk-inline-dest{
+    width: 50vh;
+    height: 44px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.uk-inline-checkin{
+    width: 25vh;
+    height: 44px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.uk-inline-checkout{
+    width: 25vh;
+    height: 44px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.uk-inline-users{
+    width: 25vh;
+    height: 44px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.uk-button{
+    text-transform: none;
+    background-color: blue;
+    color: rgb(251, 251, 253);
+    font-weight: bold;
+    line-height: 38px;
+    /* position: relative; */
+    position: relative;
+    height: 42px;
+    width: 18vh;
+    /* height: 10vh; */
+    padding-left: 10px;
+}
+.uk-button-apply{
+    text-transform: none;
+    background-color: blue;
+    color: rgb(251, 251, 253);
+    font-weight: bold;
+    line-height: 38px;
+    position: relative;
+    height: 30px;
+    width: auto;
+    text-align: center;
+}
+.uk-button-reset{
+    text-transform: none;
+    line-height: 38px;
+    position: relative;
+    height: 30px;
+    width: auto;
+    text-align: center;
+}
+
+.uk-form-icon{
+    padding-left: 10px;
+}
+    
+
+.uk-card{
+    
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    
+}
+.uk-margin-left {
+    margin-left: 11px!important;
+}
+.uk-card-date{
+    width: 60vh;
+    height: 10vh;
+}
+
+
+
+.uk-table{
+    width: 30vh;
+    padding: 0px 0px;
+    
+    display: inline-block;
+    
+}
+.uk-table-inter{
+    width: 80vh;
+    padding: 0px 0px;
+    
+    display: inline-block;
+    
+}
+
+.uk-table td{
+    padding: 0px;
+}
+
+.table-data{
+    display: inline-block;
+    color: rgb(99, 157, 245);
+    font-size: 20px;
+}
+
+.heading{
+    font: outline;
+    color: rgb(47, 132, 202);
+}
+
+
+.style{
+    width:500px;
+    height:150px;
+    line-height:3em;
+    overflow-y:scroll;
+    padding:5px;
+    background-color:white;
+    line-height: 1.5;
+}
+.inter{
+    font: outline;
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+}
+.uk-place{
+    display: inline;
+}

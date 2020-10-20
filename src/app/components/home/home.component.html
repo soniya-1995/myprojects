@@ -1,75 +1,65 @@
-
+<!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+<app-header></app-header>
 <div class="uk-section">
     <div class="uk-container">
 
-    <div class="uk-alert-danger uk-width-1-3" uk-alert>
+    <div class="uk-alert-danger uk-width-1-3 uk-visible@m " style="margin-left: 50px;" uk-alert >
         <a class="uk-alert-close" uk-close></a>
         <p><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#">travel restrictions overview </a>for each country</p>
     </div>
     
     
     <div class="uk-panel">
-        <img class="uk-align-left uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="150" height="50" alt="image">
-        <h3 uk-grid-divider><b>Find your ideal hotel and compare prices from different websites</b></h3>
+        <img class="uk-align-left uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="180" height="50" alt="image">
+        <img class="uk-align-left uk-divider-vertical uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="150" height="50" alt="image">
+        <h2 uk-grid-divider uk-divider-vertical class="uk-visible@l"><b>Find your ideal hotel and compare prices from different websites</b></h2>
+        <h3 uk-grid-divider uk-divider-vertical class="uk-hidden@l"><b>Find your ideal place to stay</b></h3>
         <h5>Try searching for a city, a specific hotel, or even a landmark!</h5>
     </div>
     
     <div class="uk-flex uk-width-1-2@s uk-flex-wrap uk-flex-wrap-around  uk-background-muted uk-height-small">
         <form>
-            <!-- <div class="uk-margin">
-                <div class="uk-form-controls">
+            <br>
+            <div class="uk-margin uk-v">
+                <div class="uk-form-controls uk-visible@l" style="margin-left: 10px;">
                     <label><input class="uk-radio" type="radio" name="radio1">All types</label>&nbsp;&nbsp;&nbsp;&nbsp;
                     <label><input class="uk-radio" type="radio" name="radio1">Hotels</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
                     <label><input class="uk-radio" type="radio" name="radio1">Houses / Apartments / Others</label>
                 </div>
-            </div> -->
+            </div>
             <div class="uk-margin">
-                <div class="uk-inline-dest uk-width-1-2@s">
+                <div class="uk-inline-dest uk-width-1-2@s uk-hidden@m">
+                    <span class="uk-form-icon" uk-icon="icon: menu"></span>
+                    <input class="uk-input" type="text" placeholder="Enter category">
+                </div>
+                <div class="uk-inline-dest uk-width-1-2@s uk-width-1-2@m">
                     <span class="uk-form-icon" uk-icon="icon: search"></span>
                     <input class="uk-input" type="text" placeholder="Enter a hotel name or destination">
                 </div>
-                <div class="uk-inline-checkin uk-width-1-2@s">
+                <div class="uk-inline-checkin uk-width-1-2@s uk-width-1-2@m">
                     <span class="uk-form-icon" uk-icon="icon:calendar"></span>
-                    <!-- <textarea placeholder="Check In
-                    __/__/__."></textarea> -->
-                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check In     --/--/--">
+                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check In --/--/--">
                 </div>
-                <div class="uk-inline-checkout uk-width-1-2@s">
-                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check Out    --/--/--">
+                <div class="uk-inline-checkout uk-width-1-2@s uk-width-1-2@m">
+                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check Out --/--/--">
                 </div>
                 
-                <div class="uk-inline-users uk-width-1-4@s">
+                <div class="uk-inline-users uk-width-1-1@s uk-width-1-2@m uk-visible@l">
                     <span class="uk-form-icon" uk-icon="icon: users"></span>
-                    <!-- <textarea  placeholder="      1 Room
-      2 Users"></textarea> -->
-                    <input class="uk-input" type="text" placeholder="1 Room 2 Users">
-                    <div uk-dropdown="mode: click">
-                        <div class="uk-dropdown-grid uk-child-width-1-2@m uk-child-width--1-2@s" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#">Adults</a></li>
-                                    <li><a href="#">Children</a></li>
-                                    <li><a href="#">Rooms</a></li>
-                                </ul>
-                                <br>
-                                <button class="uk-button-reset uk-button-default uk-modal-close" type="button">Reset</button>
-                            </div>
-                            <div>
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="minus-circle"></span><span class="uk-margin-small-right" uk-icon="plus-circle"></span></a></li>
-                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="minus-circle"></span><span class="uk-margin-small-right" uk-icon="plus-circle"></span></a></li>
-                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="minus-circle"></span><span class="uk-margin-small-right" uk-icon="plus-circle"></span></a></li>                                    
-                                </ul>
-                                <br>
-                                <button class="uk-button-apply uk-button-primary" type="button">Apply</button>
-                            </div>
-                        </div>
-                    </div>
+                    <input class="uk-input" type="text" placeholder="1 Room 2 Users"> 
                 </div>
-                <button class="uk-button uk-button-primary uk-width-1-6@l uk-width-1-1@s">Search</button>
+
+                <div class="uk-inline-dest uk-width-1-2@s uk-hidden@l  uk-width-1-2@m">
+                    <span class="uk-form-icon" uk-icon="icon: users"></span>
+                    <input class="uk-input" type="text" placeholder="1 Room 2 Users">
+                </div>
+                <!-- <button mat-flat-button color="primary" class="uk-button">Search</button> -->
+                <button class="uk-button uk-button-primary uk-width-1-6@l uk-visible@l">Search</button>
+                <button class="uk-button-small uk-button-primary uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Search</button>
+                
             </div>
-            <h4><b>We compare multiple booking sites at once</b></h4>
-        </form> 
+            <h4 class="h4"><b>We compare multiple booking sites at once</b></h4>
+        </form>
         
         <br>
         
@@ -82,7 +72,7 @@
             <img src="assets/images/all.jpg" width="150" alt="brand">
             <img src="assets/images/oyo.jpg" width="150" alt="brand">&nbsp;&nbsp;&nbsp;&nbsp;+100 more
         </div>
-        
+    
 
     </div>
     <br>
@@ -91,172 +81,158 @@
 
     <h3 class="dest"><b>These top destinations are just a click away</b></h3>
 
-    <!-- <div>
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage"><b>Top Cities</b></button>
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-dest"><b>Top Destinations</b></button>
-    </div> -->
 
 
-    <ul uk-tab>
+    <ul class="uk-subnav" uk-switcher="media: @s" uk-switcher uk-tab>
         
-        <li><a href="#" uk-toggle="target: #toggle-usage"><b>Top Cities</b></a></li>
-        <li><a href="#"  uk-toggle="target: #toggle-dest"><b>Top Destinations</b></a></li>
+        <li><a href="#" ><b>Top Cities</b></a></li>
+        <li><a href="#"><b>Top Destinations</b></a></li>
 
     </ul>
+    
+    <ul class="uk-switcher uk-margin-large">
+        <li>
+            <div uk-slider  >
+                <div class="uk-position-relative uk-visible-toggle">
+                    <div class="uk-slider-container " >
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-1-4@l uk-child-width-1-4@m">
+                            <li>
+                                <div>
+                                    <img src="assets/images/mumbai.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Mumbai</a></b></h3>
+                                        <h5 class="rate"><a href="#" class="hotel">8,283 Hotels <b>Avg. ₹4,212</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/delhi.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Delhi</a></b></h3>
+                                        <h5><a href="#"class="hotel">13,839 Hotels <b>Avg. ₹3,388</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/bengaluru.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Bengaluru</a></b></h3>
+                                        <h5><a href="#" class="hotel">9,932 Hotels <b>Avg. ₹3,452</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/dubai.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Dubai</a></b></h3>
+                                        <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹15,037</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/jaipur.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Jaipur</a></b></h3>
+                                        <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹2,728</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/paris.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Paris</a></b></h3>
+                                        <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹16,454</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </li>
+        <li>
+            <div uk-slider>
+                <div class="uk-position-relative">
+                    <div class="uk-slider-container" >
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@m">
+                            <li>
+                                <div>
+                                    <img src="assets/images/goa.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Goa</a></b></h3>
+                                        <h5><a href="#" class="hotel">25,205 Hotels <b>Avg. ₹4,388</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/kerala.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in kerala</a></b></h3>
+                                        <h5><a href="#"class="hotel">26,104 Hotels <b>Avg. ₹3,654</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/pondicherry.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Pondicherry</a></b></h3> 
+                                        <h5><a href="#" class="hotel">2,785 Hotels <b>Avg. ₹2,938</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/burj.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Dubai</a></b></h3>
+                                        <h5><a href="#" class="hotel">16,449 Hotels <b>Avg. ₹14,970</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/raj.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Delhi</a></b></h3>
+                                        <h5><a href="#" class="hotel">13,861 Hotels <b>Avg. ₹3,377</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/raja.webp" alt="img">
+                                    <div>
+                                        <h3><b><a href="#" class="hotel">Hotels in Rajasthan</a></b></h3>
+                                        <h5><a href="#" class="hotel">19,699 Hotels <b>Avg. ₹3,487</b></a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </li>
+    </ul>
+    
 
-    <div uk-slider id="toggle-usage" >
-        <div class="uk-position-relative uk-visible-toggle">
-            <div class="uk-slider-container " >
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-child-width-1-4@l uk-child-width-1-4@m">
-                    <li>
-                        <div>
-                            <img src="assets/images/mumbai.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Mumbai</a></b></h3>
-                                <h5 class="rate"><a href="#" class="hotel">8,283 Hotels <b>Avg. ₹4,212</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/delhi.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Delhi</a></b></h3>
-                                <h5><a href="#"class="hotel">13,839 Hotels <b>Avg. ₹3,388</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/bengaluru.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Bengaluru</a></b></h3>
-                                <h5><a href="#" class="hotel">9,932 Hotels <b>Avg. ₹3,452</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/dubai.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Dubai</a></b></h3>
-                                <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹15,037</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/jaipur.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Jaipur</a></b></h3>
-                                <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹2,728</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/paris.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Paris</a></b></h3>
-                                <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹16,454</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
     
-            <!-- <div class="uk-hidden@s uk-light">
-                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div> -->
-            
-            <div class="uk-visible@s">
-                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-        
-        </div>
-    
-        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    
-    </div>
-
-    <div uk-slider id="toggle-dest" hidden >
- 
-        <div class="uk-position-relative">
-    
-            <div class="uk-slider-container" >
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-4@m">
-
-                    <li>
-                        <div>
-                            <img src="assets/images/goa.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Goa</a></b></h3>
-                                <h5><a href="#" class="hotel">25,205 Hotels <b>Avg. ₹4,388</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/kerala.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in kerala</a></b></h3>
-                                <h5><a href="#"class="hotel">26,104 Hotels <b>Avg. ₹3,654</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/pondicherry.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Pondicherry</a></b></h3> 
-                                <h5><a href="#" class="hotel">2,785 Hotels <b>Avg. ₹2,938</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/burj.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Dubai</a></b></h3>
-                                <h5><a href="#" class="hotel">16,449 Hotels <b>Avg. ₹14,970</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/raj.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Delhi</a></b></h3>
-                                <h5><a href="#" class="hotel">13,861 Hotels <b>Avg. ₹3,377</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/images/raja.webp" alt="img">
-                            <div>
-                                <h3><b><a href="#" class="hotel">Hotels in Rajasthan</a></b></h3>
-                                <h5><a href="#" class="hotel">19,699 Hotels <b>Avg. ₹3,487</b></a></h5>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    
-            
-    
-            <div class="uk-visible@s">
-                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-    
-        </div>
-    
-        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    
-    </div>
     
     
 
@@ -267,33 +243,29 @@
             <div class="uk-column-1-2@s uk-column-1-2@m uk-column-1-2@l">
         
                 <h3 class="heading"><b>trivago's global hotel search</b></h3>
-                <p>
+                <p class="uk-text-justify">
                     trivago’s hotel search allows users to compare hotel prices in just a few clicks from more than 400 booking sites for 1.8 million+ hotels in over 190 countries. With 1.4 billion visits annually to our site, travellers regularly use the hotel comparison to compare deals in the same city. Get information for weekend trips to cities like  <a href="#">Mumbai</a> or <a href="#">Bengaluru</a>  and you can find the right hotel on trivago quickly and easily.<a href="#"> Delhi </a>and its surrounding area are great for trips that are a week or longer with the numerous hotels available.
                 </p>
                 <h3 class="heading"><b>Hotel reviews help you find your ideal hotel</b></h3>
-                <p>
+                <p class="uk-text-justify">
                     Over <b>175 million aggregated hotel ratings</b> and more than 19 million images allow you to find out more about where you're travelling. To get an extended overview of a hotel property, trivago shows the average rating and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc. trivago makes it easy for you to find information about your trip to <a href="#">Dubai</a>, including the ideal hotel for you.
                 </p><br><br><br><br><br><br>
                 <h3 class="heading"><b>Find cheap hotels on trivago</b></h3>
-                <p>
+                <p class="uk-text-justify">
                     With trivago you can easily <b>find your ideal hotel and compare prices from different websites.</b> Simply enter where you want to go and your desired travel dates, and let our hotel search engine compare accommodation prices for you. To refine your search results, simply filter by price, distance (e.g. from the beach), star category, facilities and more. From budget hostels to luxury suites, trivago makes it easy to book online. You can search from a large variety of rooms and locations across India, like<a href="#"> Shimla</a> and <a href="#">Jaipur </a>to popular cities and holiday destinations abroad!
                 </p>
                 <h3 class="heading"><b>How to book</b></h3>
-                <p>
+                <p class="uk-text-justify">
                     trivago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. This means that while users decide on trivago which hotel best suits their needs, the booking process itself is completed through the booking sites (which are linked to our website). By clicking on the “view deal” button, you will be forwarded onto a booking site where you can complete the reservation for the hotel deal found on trivago.
                 </p>
                 <p>
                     Let trivago help you to find the right price from over 400 booking sites!
                 </p>
-
             </div>
-
-            
-
-            <div class="uk-overflow-auto">
-                <table class="uk-table">
+                <div>
+                <table class="uk-table uk-table-small">
                     <caption class="table-data"><b>More Top Cities</b></caption>
-                    <div class="style" >
+                    <div class="style uk-overflow-auto" >
                         <tbody>
                             <tr>
                                 <td ><a href="#" class="inter">Chennai</a></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -369,114 +341,109 @@
                     </div>
                     
                 </table>
-
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <table class="uk-table-inter">
                     <caption class="table-data"><b>trivago International</b></caption>
                     <div class="style">
                         <tbody class="table-row">
                             <tr>
-                                <td><a href="#" class="inter"> العالمالعربي trivago</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter"> trivago Argentina</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter"> trivago Australia</a></td>
+                                <td><a href="#" class="int"> العالمالعربي trivago</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int"> trivago Argentina</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int"> trivago Australia</a></td>
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago България</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago België</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Brasil</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago България</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago België</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Brasil</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Canada </a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Česko </a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Chile </a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
+                                <td><a href="#" class="int">trivago Canada </a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Česko </a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Chile </a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Colombia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Danmark</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Deutschland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
+                                <td><a href="#" class="int">trivago Colombia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Danmark</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Deutschland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Ecuador</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Ελλάδα</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago España</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
+                                <td><a href="#" class="int">trivago Ecuador</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Ελλάδα</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago España</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                            
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago France</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago 한국</a></td>&nbsp;&nbsp;&nbsp;&nbsp; 
-                                <td><a href="#" class="inter">trivago Hrvatska</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                           
+                                <td><a href="#" class="int">trivago France</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago 한국</a></td>&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <td><a href="#" class="int">trivago Hrvatska</a></td>&nbsp;&nbsp;&nbsp;&nbsp;                           
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Indonesia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Ireland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Italia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Indonesia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Ireland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Italia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Magyarország</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Malaysia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago México</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Magyarország</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Malaysia</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago México</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Nederland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago NewZealand</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Norge</a></td>
+                                <td><a href="#" class="int">trivago Nederland</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago NewZealand</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Norge</a></td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Österreich</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Perú</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Philippines</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Österreich</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Perú</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Philippines</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Polska</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Portugal</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago ประเทศไทย</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Polska</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Portugal</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago ประเทศไทย</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago 日本</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago România</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Россия</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago 日本</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago România</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Россия</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Schweiz</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Singapore</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Slovenija</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Schweiz</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Singapore</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Slovenija</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Slovensko</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago SouthAfrica</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Srbija</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Slovensko</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago SouthAfrica</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Srbija</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Suomi</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Sverige</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago 台灣</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Suomi</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Sverige</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago 台灣</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Türkiye</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago UAE</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago UnitedKingdom</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Türkiye</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago UAE</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago UnitedKingdom</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago Uruguay</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago USA</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago Việt Nam</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Uruguay</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago USA</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago Việt Nam</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
                                 
                             </tr>
                             <tr>
-                                <td><a href="#" class="inter">trivago 香港</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <td><a href="#" class="inter">trivago ישראל</a></td>
+                                <td><a href="#" class="int">trivago 香港</a></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td><a href="#" class="int">trivago ישראל</a></td>
                                 
                             </tr>
     
@@ -491,5 +458,5 @@
     </div><br><br><br><br>
         
 </div>
-
+<app-footer></app-footer>
 

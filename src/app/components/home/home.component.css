@@ -1,6 +1,24 @@
+
 .uk-alert-danger{
     color: #333;
-    width: 1100px;
+    width: 1000px;
+    background-color: rgb(250, 225, 156);
+    
+}
+.uk-divider-vertical{
+    height: 100px;
+}
+
+[class*=uk-divider] {
+    border: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.h3{
+    font-family: Arial,Helvetica,Sans,Sans-Serif,"Sans Serif";
+}
+.h4{
+    padding: 10px;
 }
 .enter{
     width: 200px;
@@ -9,6 +27,7 @@
 .check{
     width: 200px;
     height: 5vh;
+    padding: 100px;
 }
 .uk-panel{
     line-break: 1.0;
@@ -33,14 +52,7 @@ strong {
     background-color: white;
     size: 200;
 }
-.uk-divider-vertical{
-    height: 40px;
-}
 
-[class*=uk-divider] {
-    border: none;
-    margin-bottom: -41px;
-}
 
 .destination{
     height: auto;
@@ -77,6 +89,7 @@ strong {
 .dest{
     font: outline;
     color: rgb(120, 160, 247);
+    font-size: x-large;
 }
 
 .hotel{
@@ -98,62 +111,57 @@ strong {
     height: 44px;
     padding-right: 20px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .uk-inline-checkin{
     width: 25vh;
     height: 44px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 .uk-inline-checkout{
     width: 25vh;
     height: 44px;
     padding-right: 20px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
-
+.uk-input{
+    padding-top: 10px;
+}
 .uk-inline-users{
     width: 25vh;
     height: 44px;
     padding-right: 20px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
+/* .uk-dropdown-grid{
+    width: 20px;
+} */
 
 .uk-button{
+    display: inline-block;
+    width: 90px;
     text-transform: none;
     background-color: blue;
     color: rgb(251, 251, 253);
     font-weight: bold;
     line-height: 38px;
-    /* position: relative; */
     position: relative;
     height: 42px;
-    width: 18vh;
+    /* width: 18vh; */
+    /* webkit-transform: translate3d(-50%, -50%, 0); */
     /* height: 10vh; */
+    padding-left: 20px;
+    
+}
+.uk-button-small{
     padding-left: 10px;
+    width: 45.5vh;
+    margin-left: 10px;
 }
-.uk-button-apply{
-    text-transform: none;
-    background-color: blue;
-    color: rgb(251, 251, 253);
-    font-weight: bold;
-    line-height: 38px;
-    position: relative;
-    height: 30px;
-    width: auto;
-    text-align: center;
-}
-.uk-button-reset{
-    text-transform: none;
-    line-height: 38px;
-    position: relative;
-    height: 30px;
-    width: auto;
-    text-align: center;
-}
+
 
 .uk-form-icon{
     padding-left: 10px;
@@ -178,17 +186,20 @@ strong {
 
 
 .uk-table{
-    width: 30vh;
+    width: 36vh;
     padding: 0px 0px;
-    
-    display: inline-block;
+    width: calc(50% - 10px);
+    float: left;
+    /* margin: 5px; */
+    /* display: inline-block; */
     
 }
 .uk-table-inter{
+    
     width: 80vh;
     padding: 0px 0px;
     
-    display: inline-block;
+    /* display: inline-block; */
     
 }
 
@@ -200,13 +211,14 @@ strong {
     display: inline-block;
     color: rgb(99, 157, 245);
     font-size: 20px;
+    display: inline;
 }
 
 .heading{
     font: outline;
+    font-size: 22px;
     color: rgb(47, 132, 202);
 }
-
 
 .style{
     width:500px;
@@ -221,7 +233,18 @@ strong {
     font: outline;
     color: rgb(54, 54, 54);
     font-size: 15px;
+    padding: 18px;
+}
+.int{
+    font: outline;
+    color: rgb(54, 54, 54);
+    font-size: 14px;
 }
 .uk-place{
     display: inline;
+}
+.uk-overflow-auto{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: end;
 }

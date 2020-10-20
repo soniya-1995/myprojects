@@ -1,0 +1,49 @@
+
+.login-card{
+    box-shadow: 0 1px 4px rgba(41,51,57,0.5);
+}
+
+.btn-logo{
+    margin-top: 3%;
+}
+.uk-button{
+    text-transform: none;
+    border: 1px solid;
+    min-height: 44px;
+    font-size: 16px;
+}
+.logo-btn:Hover{
+    background: #697379;
+}
+/* .logo-btn{
+    width: 100%;
+} */
+/* .logo-login{
+    margin-left: 250px;
+} */
+
+@media (max-width:400px) and (min-width:900px) {
+    .uk-button{
+        font-size: 15px;
+    }
+    .foot-text{
+        font-size: 13px;
+        margin-left: 25px;
+        }
+}
+
+@media(max-width:670px){
+    .uk-button{
+        font-size: 14px;
+    }
+}
+@media (max-width:324px){
+    .uk-button{
+        font-size: 14px;
+    }
+
+    .foot-text{
+        font-size: 13px;
+        margin-left: 25px;
+    }
+}

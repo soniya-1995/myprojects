@@ -1,3 +1,4 @@
+
 .uk-navbar{
     background: none;
     border-bottom: 2px solid #F5F5F6;
@@ -90,3 +91,41 @@ border-bottom: 2px solid #F5F5F6;
         display: none;
     }
 }
+
+
+
+/* 
+
+.uk-text-normal{
+    font-size: 20px;    
+}
+.uk-navbar-dropdown-nav .uk-dropdown-right-top {
+    top: 0px !important;
+     min-height: 100%;
+}
+.uk-width-medium
+{
+  
+    line-height: 2.8rem;
+   
+}
+.uk-width-small
+{
+    width: 15%;
+    line-height: 2.8rem;
+    min-height: 100%;
+}
+.uk-navbar-right
+{
+    margin-right: 16%;
+}
+.uk-text-small
+{
+    font-size: 20px;
+}
+ul li{
+    font-size: 15px;
+}
+.uk-offcanvas-bar{
+    background-color: #135796;
+} */

@@ -1,44 +1,81 @@
-<!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+
 <app-header></app-header>
 <div class="uk-section">
     <div class="uk-container">
+        <div uk-alert>
+            <a class="uk-alert-close alert-box uk-margin-remove-left uk-margin-remove-bottum" uk-close></a>
+            <p>Know before you go. The restrictions surrounding COVID-19 change often. Please <a href="">stay informed</a>  before traveling. Stay safe. To help you further, we have put together a <a href="">travel restrictions overview</a>  for each country</p>
+        </div>
 
-    <div class="uk-alert-danger uk-width-1-3 uk-visible@m " style="margin-left: 50px;" uk-alert >
-        <a class="uk-alert-close" uk-close></a>
-        <p><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#">travel restrictions overview </a>for each country</p>
-    </div>
-    
-    
-    <div class="uk-panel">
-        <img class="uk-align-left uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="180" height="50" alt="image">
-        <img class="uk-align-left uk-divider-vertical uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="150" height="50" alt="image">
-        <h2 uk-grid-divider uk-divider-vertical class="uk-visible@l"><b>Find your ideal hotel and compare prices from different websites</b></h2>
-        <h3 uk-grid-divider uk-divider-vertical class="uk-hidden@l"><b>Find your ideal place to stay</b></h3>
-        <h5>Try searching for a city, a specific hotel, or even a landmark!</h5>
-    </div>
-    
-    <div class="uk-flex uk-width-1-2@s uk-flex-wrap uk-flex-wrap-around  uk-background-muted uk-height-small">
-        <form>
-            <br>
-            <div class="uk-margin uk-v">
-                <div class="uk-form-controls uk-visible@l" style="margin-left: 10px;">
-                    <label><input class="uk-radio" type="radio" name="radio1">All types</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <label><input class="uk-radio" type="radio" name="radio1">Hotels</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
-                    <label><input class="uk-radio" type="radio" name="radio1">Houses / Apartments / Others</label>
+        <div class="uk-panel">
+            <img class="uk-align-left uk-visible@l  logo-trivago" src="https://logodownload.org/wp-content/uploads/2016/11/trivago-logo.png" width="180" height="50" alt="image">
+            <img class="uk-align-left uk-divider-vertical uk-margin-remove-adjacent uk-visible@l" src="assets/images/trivago.png" width="150" height="50" alt="image">
+            <h2 uk-grid-divider uk-divider-vertical class="uk-visible@l main-head uk-margin-remove-bottom" style="font-size: 23px;"><b>Find your ideal hotel and compare prices from different websites</b></h2>
+            <h4 uk-grid-divider uk-divider-vertical class="uk-hidden@l"><b>Find your ideal place to stay</b></h4>
+            <h5 class="uk-margin-remove-top" style="font-size: 16px;">Try searching for a city, a specific hotel, or even a landmark!</h5>
+        </div>
+
+        <div class="search-form">
+            <form action="#" method="post">
+                <div class="form-container">
+                    <div class="form-widgets">
+                        <div class="search">
+                            <span class="search-icon fa fa-search"></span>
+                            <input type="search" name="search" id="search" placeholder="Enter a hotel name or destination">
+                        </div>
+                    </div>
+                    <div class="calender-form">
+                        <button type="submit" class="check-in">
+                            <span class="flex">
+                                <span class="search-icon fa fa-calendar"></span>
+                                <span class="check-in">
+                                    <span class="check-in-title">Check in</span>
+                                    <span class="check-in-place">-- / -- / ----</span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="calender-form check-out">
+                        <button type="submit" class="check-out">
+                            <span class="flex">
+                                <span class="check-in">
+                                    <span class="check-in-title">Check out</span>
+                                    <span class="check-in-place">-- / -- / ----</span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="search-room" type="submit">
+                        <span class="flex">
+                            <span class="search-icon users fa fa-users"></span>
+                            <span class="room">
+                                <span class="room-head">1 Room</span>
+                                <span class="room-head check-in-place">2 Guests</span>
+                            </span>
+                        </span>
+                    </button>
+                    <button class="search-btn" type="submit">
+                        <span class="none-search fa fa-search"></span>
+                        <span class="display-search">Search</span>
+                    </button>
                 </div>
-            </div>
-            <div class="uk-margin">
-                <div class="uk-inline-dest uk-width-1-2@s uk-hidden@m">
-                    <span class="uk-form-icon" uk-icon="icon: menu"></span>
-                    <input class="uk-input" type="text" placeholder="Enter category">
-                </div>
-                <div class="uk-inline-dest uk-width-1-2@s uk-width-1-2@m">
+            </form>
+        </div>
+
+        
+        <div class="uk-flex uk-width-1-2@s  uk-flex-wrap uk-flex-wrap-around  uk-background-muted uk-height-small">
+           
+           
+             <!-- <form>
+             <div class="uk-margin form-contents ">
+                
+                <div class="uk-inline-dest uk-width-1-2@s uk-width-1-2@s uk-width-1-2@m">
                     <span class="uk-form-icon" uk-icon="icon: search"></span>
-                    <input class="uk-input" type="text" placeholder="Enter a hotel name or destination">
+                    <input class="uk-input" type="text" placeholder="Enter a hotel name or destination" style="width:100%">
                 </div>
                 <div class="uk-inline-checkin uk-width-1-2@s uk-width-1-2@m">
                     <span class="uk-form-icon" uk-icon="icon:calendar"></span>
-                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check In --/--/--">
+                    <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check In --/--/--" style="margin-left: auto;">
                 </div>
                 <div class="uk-inline-checkout uk-width-1-2@s uk-width-1-2@m">
                     <input class="uk-input" type="text" onfocus="(this.type='date')" placeholder="Check Out --/--/--">
@@ -46,48 +83,115 @@
                 
                 <div class="uk-inline-users uk-width-1-1@s uk-width-1-2@m uk-visible@l">
                     <span class="uk-form-icon" uk-icon="icon: users"></span>
-                    <input class="uk-input" type="text" placeholder="1 Room 2 Users"> 
+                    <input class="uk-input" type="text" placeholder="1 Room 2 Users" > 
                 </div>
 
                 <div class="uk-inline-dest uk-width-1-2@s uk-hidden@l  uk-width-1-2@m">
                     <span class="uk-form-icon" uk-icon="icon: users"></span>
                     <input class="uk-input" type="text" placeholder="1 Room 2 Users">
                 </div>
-                <!-- <button mat-flat-button color="primary" class="uk-button">Search</button> -->
-                <button class="uk-button uk-button-primary uk-width-1-6@l uk-visible@l">Search</button>
-                <button class="uk-button-small uk-button-primary uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Search</button>
                 
+                <button class="uk-button uk-button-primary uk-width-1-6@l uk-visible@l" style="background: #007fad;
+                width: 280px; margin-left:25px;" >Search</button>
+                <button class="uk-button-small uk-button-primary uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Search</button>
             </div>
-            <h4 class="h4"><b>We compare multiple booking sites at once</b></h4>
-        </form>
+         
+     
+        </form>  -->
+        <br><br> <br>
+         <h4 class="uk-text-bold uk-margin-remove"> <b>We compare multiple booking sites at once</b> </h4> 
         
-        <br>
-        
-        <div class="inline">
-            <img src="assets/images/booking.jpg" width="150" alt="brand">
-            <img src="assets/images/agoda.jpg" width="150" alt="brand">
-            <img src="assets/images/airbnb.jpg" width="150" alt="brand">
-            <img src="assets/images/expert.jpg" width="150" alt="brand">
-            <img src="assets/images/trip.jpg" width="150" alt="brand">
-            <img src="assets/images/all.jpg" width="150" alt="brand">
-            <img src="assets/images/oyo.jpg" width="150" alt="brand">&nbsp;&nbsp;&nbsp;&nbsp;+100 more
+            <br>
+            <!-- <div class="uk-margin uk-v">
+                <div class="uk-form-controls uk-visible@l" style="margin-left: 10px;">
+                    <label><input class="uk-radio" type="radio" name="radio1">All types</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input class="uk-radio" type="radio" name="radio1">Hotels</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                    <label><input class="uk-radio" type="radio" name="radio1">Houses / Apartments / Others</label>
+                </div>
+            </div>  -->
+           
+
+           <div class="inline" style="width: auto">
+            <img src="assets/images/booking.jpg" width="125" alt="brand">
+            <img src="assets/images/agoda.jpg" width="125" alt="brand">
+            <img src="assets/images/airbnb.jpg" width="125" alt="brand">
+            <img src="assets/images/expert.jpg" width="125" alt="brand">
+            <img src="assets/images/trip.jpg" width="125" alt="brand">
+            <img src="assets/images/all.jpg" width="125" alt="brand">
+            <img src="assets/images/oyo.jpg" width="125" alt="brand">&nbsp;&nbsp;&nbsp;&nbsp;+100 more
+         </div>
+
+        </div>  
+
+    </div> 
+</div>
+
+<div class="uk-section">
+    <div class="uk-container">
+
+<h3><b>Need inspiration for your next post-isolation trip?</b> </h3>
+<p>Explore unique hotel experiences with 800+ articles on trivago magazine, from the coolest hotels in New York City to romantic getaways in Florida and beyond.</p>
+<img class="uk-align-left uk-visible@l" src="https://logodownload.org/wp-content/uploads/2016/11/trivago-logo.png" width="120px" height="20px" alt="image"> <h3 class="uk-margin-remove-bottom uk-margin-remove-top">Magazine</h3> <br><br><br>
+<div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
+
+ 
+    <div>
+        <div class="uk-card">
+            <img class="uk-align-left uk-margin-remove-bottom" src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,f_auto,h_300,q_auto,w_300/mag/2019/01/17121919/vietnam-beach-resorts.jpg" width="258" height="258" alt="image">
+            <div class="img-desc">
+                <p class="uk-margin-remove">60+ articles</p>
+                <a href=""> <b> Weekend Getaways</b></a><br>
+                <a href=""> Get away from it all (even for just a few days) with a quick nearby trip.
+                </a>
+            </div>
         </div>
-    
-
     </div>
-    <br>
-    <br>
-    <br>
+    <div>
+        <div class="uk-card">
+            <img class="uk-align-left  uk-margin-remove-bottom" src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,f_auto,h_300,q_auto,w_300/mag/2020/06/21184049/taxonomy-midwest-priscilla-du-preez-105714-unsplash-copy.jpg" width="258" height="258" alt="image">
+            <div class="img-desc">
+                <p class="uk-margin-remove">60+ articles</p>
+                <a href=""> <b> Romantic Getaways in the US</b></a><br>
+                <a href=""> Get away from it all (even for just a few days) with a quick nearby trip.
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card">
+            <img class="uk-align-left  uk-margin-remove-bottom" src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,f_auto,h_300,q_auto,w_300/mag/2020/04/01073802/fotolia-210924338-subscription-monthly-xxl-mgz2596.jpg" width="258" height="258" alt="image">
+            <div class="img-desc">
+                <p class="uk-margin-remove">60+ articles</p>
+                <a href=""> <b>Family Vacations in the US</b></a><br>
+                <a href=""> Get away from it all (even for just a few days) with a quick nearby trip.
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card">
+            <img class="uk-align-left  uk-margin-remove-bottom" src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,f_auto,h_300,q_auto,w_300/mag/2019/08/15135656/trivago-magazine-card.jpg" width="258" height="258" alt="image">
+            <div class="img-desc">
+                <p class="uk-margin-remove">60+ articles</p>
+                <a href=""> <b>trivago magazine</b></a><br>
+                <a href=""> Get away from it all (even for just a few days) with a quick nearby trip.
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
 
-    <h3 class="dest"><b>These top destinations are just a click away</b></h3>
 
 
-
-    <ul class="uk-subnav" uk-switcher="media: @s" uk-switcher uk-tab>
-        
+<div class="uk-section">
+    <div class="uk-container">
+        <h3 class="dest"><b>These top destinations are just a click away</b></h3>
+        <ul class="uk-subnav" uk-switcher="media: @s" uk-switcher uk-tab>
         <li><a href="#" ><b>Top Cities</b></a></li>
         <li><a href="#"><b>Top Destinations</b></a></li>
-
     </ul>
     
     <ul class="uk-switcher uk-margin-large">
@@ -100,7 +204,7 @@
                                 <div>
                                     <img src="assets/images/mumbai.webp" alt="img">
                                     <div>
-                                        <h3><b><a href="#" class="hotel">Hotels in Mumbai</a></b></h3>
+                                        <h3><b><a href="mumbai" class="hotel">Hotels in Mumbai</a></b></h3>
                                         <h5 class="rate"><a href="#" class="hotel">8,283 Hotels <b>Avg. ₹4,212</b></a></h5>
                                     </div>
                                 </div>
@@ -109,7 +213,7 @@
                                 <div>
                                     <img src="assets/images/delhi.webp" alt="img">
                                     <div>
-                                        <h3><b><a href="#" class="hotel">Hotels in Delhi</a></b></h3>
+                                        <h3><b><a href="delhi" class="hotel">Hotels in Delhi</a></b></h3>
                                         <h5><a href="#"class="hotel">13,839 Hotels <b>Avg. ₹3,388</b></a></h5>
                                     </div>
                                 </div>
@@ -118,7 +222,7 @@
                                 <div>
                                     <img src="assets/images/bengaluru.webp" alt="img">
                                     <div>
-                                        <h3><b><a href="#" class="hotel">Hotels in Bengaluru</a></b></h3>
+                                        <h3><b><a href="banglur" class="hotel">Hotels in Bengaluru</a></b></h3>
                                         <h5><a href="#" class="hotel">9,932 Hotels <b>Avg. ₹3,452</b></a></h5>
                                     </div>
                                 </div>
@@ -127,7 +231,7 @@
                                 <div>
                                     <img src="assets/images/dubai.webp" alt="img">
                                     <div>
-                                        <h3><b><a href="#" class="hotel">Hotels in Dubai</a></b></h3>
+                                        <h3><b><a href="dubai" class="hotel">Hotels in Dubai</a></b></h3>
                                         <h5><a href="#" class="hotel">16,434 Hotels <b>Avg. ₹15,037</b></a></h5>
                                     </div>
                                 </div>
@@ -230,15 +334,6 @@
             </div>
         </li>
     </ul>
-    
-
-    
-    
-    
-
-
-     
-
 <br><br>
             <div class="uk-column-1-2@s uk-column-1-2@m uk-column-1-2@l">
         
@@ -448,15 +543,10 @@
                             </tr>
     
                         </tbody>
-                        
                     </div>
-
                 </table>
-                    
             </div>
-            
-    </div><br><br><br><br>
-        
+    </div>
 </div>
-<app-footer></app-footer>
 
+<app-footer></app-footer>

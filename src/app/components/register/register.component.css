@@ -10,20 +10,13 @@
 .foot-sec{
     margin-left: 95px;
 }
-.logo-btn:hover{
-   background:#697379;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
+
 .foot-text{
     color:#37454D;
 }
 .btn-logo{
     margin-top: 3%;
 }
-
 .uk-button{
     text-transform: none;
     border: 1px solid;
@@ -53,6 +46,8 @@ a{
         color: #fff;
     }
 
+
+ 
 @media (max-width:393px) and (min-width:381px){ 
     .uk-button{
         font-size: 15px;
@@ -81,4 +76,57 @@ a{
         font-size: 10px;
     }
     
+}   
+/* 
+@media (max-width:400px) and (min-width:900px) {
+    .uk-button{
+        font-size: 15px;
+    }
+    .foot-text{
+        font-size: 15px;
+        margin-left: 25px;
+        }
 }
+@media (max-width:776px) and (min-width:751px) {
+    .uk-button{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width:751px) and (min-width:725px) {
+    .uk-button{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width:725px) and (min-width:698px) {
+    .uk-button{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width:698px) and (min-width:672px) {
+    .uk-button{
+        font-size: 12px;
+    }
+}
+@media (max-width:672px) and (min-width:640px) {
+    .uk-button{
+        font-size: 10px;
+    }
+} */
+/* @media(max-width:670px){
+    .uk-button{
+        font-size: 14px;
+    }
+} */
+/* @media (max-width:324px){
+    .uk-button{
+        font-size: 14px;
+    }
+
+    .foot-text{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+} */

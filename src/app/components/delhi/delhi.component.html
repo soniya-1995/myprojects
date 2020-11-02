@@ -1,0 +1,690 @@
+<!-- Hotels in Delhi -->
+<app-header></app-header>
+<div class="uk-container uk-hidden@s">
+    <div class="uk-margin">
+        <button class="ind uk-button-small uk-button-default uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Hotels in Delhi, India</button>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Delhi online</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Delhi!</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="search-form">
+    <form action="#" method="post">
+        <div class="form-container">
+            <div class="form-widgets">
+                <div class="search">
+                    <span class="search-icon fa fa-search"></span>
+                    <input type="search" name="search" id="search" placeholder="Enter a hotel name or destination">
+                </div>
+            </div>
+            <div class="calender-form">
+                <button type="submit" class="check-in">
+                    <span class="flex">
+                        <span class="search-icon fa fa-calendar"></span>
+                        <span class="check-in">
+                            <span class="check-in-title">Check in</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <div class="calender-form check-out">
+                <button type="submit" class="check-out">
+                    <span class="flex">
+                        <span class="check-in">
+                            <span class="check-in-title">Check out</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <button class="search-room" type="submit">
+                <span class="flex">
+                    <span class="search-icon users fa fa-users"></span>
+                    <span class="room">
+                        <span class="room-head">1 Room</span>
+                        <span class="room-head check-in-place">2 Guests</span>
+                    </span>
+                </span>
+            </button>
+            <button class="search-btn" type="submit">
+                <span class="none-search fa fa-search"></span>
+                <span class="display-search">Search</span>
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="uk-container uk-visible@s">
+    <div class=" uk-column-1-5@s uk-column-divider">
+        <h3><b>Price/night</b></h3>
+        <p style="position: absolute;">+44,000</p>
+        <mat-slider min="1" max="400" step="1" value="1"></mat-slider>
+        <br>
+        <br>
+        <h3><b>Accomidation</b></h3>
+        <p>All types<span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        <br>
+        <h3><b>Guest rating</b></h3>
+        <p>All <span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        <br>
+        <h3><b>Hotel location</b></h3>
+        <p>City centre<span class="i1" uk-icon="chevron-down"></span></p>
+        <br>
+        <h3><b>More Filters</b></h3>
+        <p>select<span class="i1" uk-icon="chevron-down"></span></p>
+    </div>
+</div>
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <div uk-alert >
+            <div class="uk-card  uk-card-default uk-card-body uk-visible@m">
+                <a class="uk-alert-close" uk-close></a>
+                    <div class="uk-container">
+                        <h2 style="color: black;"><b>Hotels in Delhi, India</b></h2>
+                        <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Delhi online
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Delhi!
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div uk-alert>
+            <div class="uk-grid uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <a class="uk-alert-close" uk-close></a>
+                      <p style="font-size: 16px;color: rgb(58, 58, 58);"><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#" style="color: rgb(126, 213, 241);"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#" style="color: rgb(126, 213, 241);">travel restrictions overview </a>for each country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-button-group">
+            <h4 style="margin-top: 10px;"><b>Sort by</b></h4>
+            <button class="uk-button-i uk-button-default">Our Recommendations<span class="i1" uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Our Recommendations</a></li>
+                    <li class="uk-active"><a href="#">Rating & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Price & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Distance & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Rate only</a></li>
+                    <li class="uk-active"><a href="#">Price only</a></li>
+                    <li class="uk-active"><a href="#">Distance only</a></li>
+                </ul>
+            </div>
+            <div class="uk-inline">
+                <button class="uk-button-in uk-button-default" type="button"><span uk-icon="icon:  warning"></span></button>
+                <div uk-dropdown style="background-color: black;color: white;">
+                    <p >The ranking results reflect your search criteria and our assessment of the attractiveness of the offer compared to other offers available on our site. It also reflects the compensation paid by the booking site</p>
+                </div>
+            </div>
+        </div>
+        <div class=" map uk-inline uk-light uk-visible@s" uk-parallax="bgy: 0" style="background-image: url('assets/images/map.jpg'); ">
+            <button class="more uk-button  uk-text-center uk-margin-auto "><span class="uk-margin-small-right location" uk-icon="location"></span>View Map</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                           <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/99/45/99459_v3.jpeg" alt="Image">
+                       </div>
+                       <div>
+                       <h3> The Grand New Delhi</h3>
+                       <p><span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       Hotel</p>
+                       <hr class="uk-divider-small">
+                       <a href="#"><span uk-icon="location"></span> 11.0 km away from beach</a>                                      
+                       <hr class="uk-divider-small">
+                       <a href=""><button class="bcredit">7.8</button>Good(1053 reviews)          </a>                                  
+                   </div>   
+                   
+                   <div style="padding-left: 0; ">
+                       <h3>Goibibo.com</h3>
+                       <p>Free cancellation</p>
+                       <div>
+                       <h3 class="green">â‚¹3,394 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                        </div>  
+                        <div class="padding">                              
+                       <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹3,841 </a>
+                       <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹3,394  Goibibo.com</a></div>     
+                   </div>         
+                   </div>
+               </div>
+            </div>
+            </div>
+            </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/24/71/2471899_v2.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3>Lemon Tree Premier Delhi Airport</h3>
+                            <p>
+                                <span class="fa fa-star checked"></span> 
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                Hotel</p>
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>12.4 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""> <button class="bcredit">7.8</button>Good (1496 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Agoda</h3>
+                            
+                            <div>
+                            <h3 class="green">â‚¹2,664 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                              </div>  
+                              <div>                                  
+                            <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹3,973 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹2,664  Agoda</a></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            
+             <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/99/48/99485_v4.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Hotel Radisson Blu Plaza Delhi</h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                               Hotel</p>
+                           
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>10.2 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""><button class="bcredit">8.4</button>Very good(2385 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Booking.com</h3>
+                            <p>Free cancellation. Pay at the property</p>
+                            <div>
+                                <h3 class="green">â‚¹2,526 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                                   </div>       
+                                <div >                             
+                            <a class="uk-button uk-button-default" href="">Hotels.com<br> â‚¹2,837 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹2,526  Booking.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/10/30/1030646_v3.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3>Eros Hotel Nehru Place New Delhi</h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            Hotel</p>
+                            <hr class="uk-divider-small">
+                            <a href="#"><span uk-icon="location"></span>8.1 km from city centre</a>                                      
+                            <hr class="uk-divider-small">
+                            <a href=""><button class="bcredit">7.7</button>Good (902 reviews)          </a>                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Agoda</h3>
+                            <p>Free cancellation.</p>
+                            <div>
+                            <h3 class="green">â‚¹2,512 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                               </div>
+                            <div>                                   
+                            <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹3,238</a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹2,512  Agoda</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+<br>        
+        <p uk-margin>
+            <button class=" b uk-button uk-visible@s"><b>Show More hotels</b></button>
+        </p>
+        <br>
+        <br>
+        <div class="uk-grid-match uk-child-width-expand@s uk-visible@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p class="delhi">Hotels in Delhi</p>
+                    <h3><b>Delhi â€“ a spicy concoction of beauty and chaos</b></h3>
+                    <p class="delhi">Delhi, home to 25 million people, is sheer mayhem. That is its attraction. However, amidst the bombastic rhythm of life, with its constant din, vivid colours, powerful aromas and spicy flavours (that send your senses into overdrive) you'll stumble across monuments, palaces, gardens and temples of real innate beauty. And moments of pure calmness. You can either live the life of a Raja in one of the lavish hotels in New Delhi or opt for a cheaper and more authentic experience of India's capital. Whatever you seek, you can find it in this eclectic and vibrant city.</p>
+                    <br>
+                    <h3><b>Very Delhi</b></h3>
+                    <p class="delhi">Delhi is a veritable melting pot - dosed with spicy flavours of course - of thousands of years of history, cultures and religions. The chaotic city is littered with monuments of past empires and dynasties. A place of tolerance, where many religions practice side by side, you will be warmly welcomed by the locals.</p>
+                    <p class="delhi">Whilst there are stunning sights to see in abundance, the main experience is Delhi itself â€“ simply embracing the way of life, the bombardment of aromas and the incessant noise. Visiting the chaotic bazaars, such as Chandni Chowk is something you'll never forget. With rickshaws and cyclists jostling for a precious piece of space amongst the dense crowds, you can find almost anything to buy here, from books to spices and hand-crafts to silk clothes. You can take a chance on an authentic food seller, which may be little more than a hole in the wall, and introduce your taste-buds to some whole new spicy flavours. If you'd prefer to err on the side of caution though, the city has a wealth of fine-dining restaurants and â€œcontinentalâ€ eateries.</p>
+                    <p class="delhi">Even if exploring the city can get quite exhilarating, you have to be on constant guard against pickpockets and being hassled for money or services. You are bound at some stage to reach a point of physical, emotional or mental saturation. Instead of retreating back to your hotel room, this is the time to visit some of the Delhi's havens of tranquillity, such as The Lodi Gardens. These idyllic gardens, adorned with monuments built by Lodi kings is a favourite place for jogging and yoga, as well as peaceful walks.</p>
+                    <br>
+                    <h3><b>Relics of empires and dynasties</b></h3>
+                    <p class="delhi">There are enough palaces, monuments and temples here to fill several cities. Which is indeed what Delhi is: a combination of no less than seven cities; some would say up to 12.</p>
+                    <p class="delhi">There are so many places to visit, you may not know where to start. You could commence with Delhi's three UNESCO World Heritage Sites: The Red Fort, Qutub Minar and Humayun's Tomb. The 17th century Red Fort, made with distinctive red sandstone and protected by an 18-metre-high wall, was built in the peak of the Mughal dynasty's reign. The incredible 16th century Humayan Tomb and gardens, where the second Mughal emperor Humayan was buried, is said to have been the inspiration for Agra's wonder: The Taj Mahal. Finally, the 12th century minaret Qutub Minar, towering at 73 metres over Delhi, is one of the finest monuments in the world and offers some stunning photo opportunities.</p>
+                    <p class="delhi">No matter your faith, you'll be welcomed into Delhi's many places of worship, such as the wonderful Sikh temple of Gurudwara Bangla Sahib, the Jama Masjid mosque or the gigantic Swaminarayan Akshardham Hindu temple, opened only in 2005 and epitomising 10000 years of Indian culture. Many even offer Langar (food) to people passing through. As well as feeling awe at the incredible architecture, you'd need to be pretty insensitive not to be moved by the sensations of peace of mind and inner calm that these sacred places evoke. The white marble Lotus Temple, is an equally stunning, in a contrasting way. Designed in the shape of a lotus flower, this modern temple encourages people of any faith to come and worship.</p>
+                    <br>
+                    <h3><b>Where to stay in Delhi</b></h3>
+                    <p class="delhi">Hotels in Delhi are mainly concentrated in certain zones. There are a number of four and five star hotels, in and amongst a few mid-range offerings near to or practically in Delhi's Indira Gandhi International Airport. Unless you are passing by or wanting to stop in a hotel for more than one night, you'll probably want somewhere more central.</p>
+                    <p class="delhi">The new airport express service takes you from the international Terminal 3 to the city centre in 25 minutes, stopping by the railway station or the modern commercial centre, Connaught Place. Centrally located and full of designer boutiques and coffee shops, Connaught Place is a popular place to stay and home to some of New Delhi's finest five star hotels.</p>
+                    <p class="delhi">For a more flavoursome and â€œauthenticâ€ experience, you could try the Paharganj neighbourhood, by Delhi's railway station. Known as â€œThe Traveller's Ghettoâ€ you can find more colourful, budget accommodation or guest houses here.</p>
+                    <p class="delhi">If you want a mid-range hotel, the Karol Bagh district might be your best bet. Not far from Old Delhi, there are many shops and markets around and a few places to eat.</p>
+                    <p class="delhi">However, if you are looking for the best luxury Delhi can offer, you may be advised to head towards Chanakyapuri, the diplomatic quarter where the foreign embassies are based. Here you'll find some of the most lavish hotels in the city.</p>
+                    <br>
+                    <h3><b>Price range</b></h3>
+                    <p class="delhi">from <b>â‚¹434</b> to <b> â‚¹3,54,355</b></p>
+                    <br>
+                    <h3><b>Top hotels</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/51/71/5171628.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Apple Villa</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹679</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/31/76/3176753_v6.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Country Inn & Suites by Radisson</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹3,351</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/45/23/4523474.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Ganapati Palace</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹554</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/95/02/9502124.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel OYO 11852 Hotel Aerostay INN</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,136</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/46/27/4627534_v4.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel SWEET HOME XX</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹684</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/76/09/7609808.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel OYO 8462 Hotel Galaxy </a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹663</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Hotels</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Treebo Trend B Continental Karol Bagh</a></td>
+                                <td><a href="#" class="top">Airport Palace New Delhi Airport</a></td>
+                                <td><a href="#" class="top">Asian Blue</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">The Leela Ambience Convention</a></td>
+                                <td><a href="#" class="top">FabHotel Wow Inn New Delhi Airport</a></td>
+                                <td><a href="#" class="top">Sahara International Deluxe</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">ibis New Delhi Aerocity</a></td>
+                                <td><a href="#" class="top">Uppal International Paharganj</a></td>
+                                <td><a href="#" class="top">Hotel Palm Springs Medi Spa & Stays</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">JP Hotel & Resorts</a></td>
+                                <td><a href="#" class="top">The Lalit New Delhi</a></td>
+                                <td><a href="#" class="top">Tivoli Grand</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">FabExpress T P Suite New Delhi Airport</a></td>
+                                <td><a href="#" class="top">OYO 24754 Hotel Good Luck House</a></td>
+                                <td><a href="#" class="top">Hotel The Claremont</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Namaskar</a></td>
+                                <td><a href="#" class="top">Shiva Dx</a></td>
+                                <td><a href="#" class="top">Hotel Shelton</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Centaur Hotel IGI Airport</a></td>
+                                <td><a href="#" class="top">Radisson Hotel New Delhi Paschim Vihar</a></td>
+                                <td><a href="#" class="top">Treebo Trend AND Vasant Kunj</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Radisson Blu Hotel New Delhi Dwarka</a></td>
+                                <td><a href="#" class="top">SPOT ON 61091 Hotel Silver Palace Dx</a></td>
+                                <td><a href="#" class="top">Artistic Home Stay</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Sinon Suite</a></td>
+                                <td><a href="#" class="top">Fortune Park D J Avenue</a></td>
+                                <td><a href="#" class="top">WelcomHotel Dwarka</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Sunstar Heights</a></td>
+                                <td><a href="#" class="top">Hotel Inn Tawang</a></td>
+                                <td><a href="#" class="top">FabHotel Olivia Suite New Delhi Airport</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Wood Castle</a></td>
+                                <td><a href="#" class="top">Taj Palace, New Delhi</a></td>
+                                <td><a href="#" class="top">Treebo Tryst Royce</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">OYO 10665 Sector 20</a></td>
+                                <td><a href="#" class="top">Treebo Trend Mohit</a></td>
+                                <td><a href="#" class="top">The Royal Plaza</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Star Villa</a></td>
+                                <td><a href="#" class="top">OYO 26589 Hotel Royal Town</a></td>
+                                <td><a href="#" class="top">Udhav Palace</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Le Meridien New Delhi</a></td>
+                                <td><a href="#" class="top">Good Palace</a></td>
+                                <td><a href="#" class="top">Hotel Regent Continental</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Banz</a></td>
+                                <td><a href="#" class="top">juSTa Atrio</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h3><b>Top Destinations</b></h3>
+                    <br>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/42/06/420699_v41.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Delhi</a></b></h3>
+                                    <p><a href="#" class="top">14198 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹434</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/42/06/420699_v41.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in New Delhi</a></b></h3>
+                                    <p><a href="#" class="top">14198 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹434</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/74/39/74395_v70.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Girgaon</a></b></h3>
+                                    <p><a href="#" class="top">5065 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹813</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/39/47/394737_v68.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Noida</a></b></h3>
+                                    <h5><a href="#" class="top">1886 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹640</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/39/48/394809_v68.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Ghazhiabad</a></b></h3>
+                                    <h5><a href="#" class="top">846 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹960</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/64/97/64971_v39.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Shimla</a></b></h3>
+                                    <h5><a href="#" class="top">2920 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,053</a></b></h4>
+                                </div>
+                            </div> 
+                        </a> 
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Destinations</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Jaipur</a></td>
+                                <td><a href="#" class="top">Mumbai</a></td>
+                                <td><a href="#" class="top">Mussoorie</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Faridabad</a></td>
+                                <td><a href="#" class="top">Nainital</a></td>
+                                <td><a href="#" class="top">Agra</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Chandigarh</a></td>
+                                <td><a href="#" class="top">Manali</a></td>
+                                <td><a href="#" class="top">Mount Abu</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Udaipur</a></td>
+                                <td><a href="#" class="top">Haridwar</a></td>
+                                <td><a href="#" class="top">Amritsar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Goa</a></td>
+                                <td><a href="#" class="top">Mathura</a></td>
+                                <td><a href="#" class="top">Mahabaleshwar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Rishikesh</a></td>
+                                <td><a href="#" class="top">Dehradun</a></td>
+                                <td><a href="#" class="top">Srinagar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Lonavala</a></td>
+                                <td><a href="#" class="top">Corbett Nationalpark</a></td>
+                                <td><a href="#" class="top">Neemrana</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Kasauli</a></td>
+                                <td><a href="#" class="top">Ahmedabad</a></td>
+                                <td><a href="#" class="top">Jaisalmer</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Darjeeling</a></td>
+                                <td><a href="#" class="top">Calangute</a></td>
+                                <td><a href="#" class="top">Lucknow</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Jodhpur</a></td>
+                                <td><a href="#" class="top">Katra</a></td>
+                                <td><a href="#" class="top">Pune</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Dharamsala</a></td>
+                                <td><a href="#" class="top">Ajmer</a></td>
+                                <td><a href="#" class="top">Hyderabad</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Bengaluru</a></td>
+                                <td><a href="#" class="top">Sawai Madhopur</a></td>
+                                <td><a href="#" class="top">Varanasi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Ludhiana</a></td>
+                                <td><a href="#" class="top">Meerut</a></td>
+                                <td><a href="#" class="top">Pushkar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Munnar</a></td>
+                                <td><a href="#" class="top">Chennai</a></td>
+                                <td><a href="#" class="top">Kolkata</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Alwar</a></td>
+                                <td><a href="#" class="top">Kathmandu</a></td>
+                                <td><a href="#" class="top">Udhagamandalam</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><b>Points of Interest - Delhi</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/12/46/1246940.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Indira Gandhi International Airport</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/16/11/1611429.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Delhi Junction Railway Station</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/16/43/164387.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Rajiv Chowk Metro Station</a></b></h3>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                    <br>
+                    <a href="#" class="top">Hotel Search</a><span uk-icon="triangle-right"></span><a href="#" class="top">India</a><span uk-icon="triangle-right"></span><a href="#" class="top">Delhi</a><span uk-icon="triangle-right"></span><a href="#" class="top">Hotels in Delhi</a>
+                </div>
+             </div>
+        </div>
+        <br>
+    </div>
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+            <li><a href="#"><span uk-pagination-previous></span></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span uk-pagination-next></span></a></li>
+        </ul>
+</div>
+
+
+<app-footer></app-footer>

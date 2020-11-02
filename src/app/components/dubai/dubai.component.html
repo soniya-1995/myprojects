@@ -1,0 +1,684 @@
+<!-- Hotels in Dubai -->
+<app-header></app-header>
+<div class="uk-container uk-hidden@s">
+    <div class="uk-margin">
+        <button class="ind uk-button-small uk-button-default uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Hotels in Dubai, United Arab Emirates</button>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Dubai online</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Dubai!</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="search-form">
+    <form action="#" method="post">
+        <div class="form-container">
+            <div class="form-widgets">
+                <div class="search">
+                    <span class="search-icon fa fa-search"></span>
+                    <input type="search" name="search" id="search" placeholder="Enter a hotel name or destination">
+                </div>
+            </div>
+            <div class="calender-form">
+                <button type="submit" class="check-in">
+                    <span class="flex">
+                        <span class="search-icon fa fa-calendar"></span>
+                        <span class="check-in">
+                            <span class="check-in-title">Check in</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <div class="calender-form check-out">
+                <button type="submit" class="check-out">
+                    <span class="flex">
+                        <span class="check-in">
+                            <span class="check-in-title">Check out</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <button class="search-room" type="submit">
+                <span class="flex">
+                    <span class="search-icon users fa fa-users"></span>
+                    <span class="room">
+                        <span class="room-head">1 Room</span>
+                        <span class="room-head check-in-place">2 Guests</span>
+                    </span>
+                </span>
+            </button>
+            <button class="search-btn" type="submit">
+                <span class="none-search fa fa-search"></span>
+                <span class="display-search">Search</span>
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="uk-container uk-visible@s">
+    <div class=" uk-column-1-5@s uk-column-divider">
+        <h3><b>Price/night</b></h3>
+        <p style="position: absolute;">+44,000</p>
+        <mat-slider min="1" max="400" step="1" value="1"></mat-slider>
+        <br>
+        <br>
+        <h3><b>Accomidation</b></h3>
+        <p>All types<span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        <br>
+        <h3><b>Guest rating</b></h3>
+        <p>All <span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        <br>
+        <h3><b>Hotel location</b></h3>
+        <p>City centre<span class="i1" uk-icon="chevron-down"></span></p>
+        <br>
+        <h3><b>More Filters</b></h3>
+        <p>select<span class="i1" uk-icon="chevron-down"></span></p>
+    </div>
+</div>
+
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <div uk-alert >
+            <div class="uk-card  uk-card-default uk-card-body uk-visible@m">
+                <a class="uk-alert-close" uk-close></a>
+                    <div class="uk-container">
+                        <h2 style="color: black;"><b>Hotels in Dubai, United Arab Emirates</b></h2>
+                        <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Dubai online
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Dubai!
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div uk-alert>
+            <div class="uk-grid uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <a class="uk-alert-close" uk-close></a>
+                      <p style="font-size: 16px;color: rgb(58, 58, 58);"><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#" style="color: rgb(126, 213, 241);"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#" style="color: rgb(126, 213, 241);">travel restrictions overview </a>for each country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-button-group">
+            <h4 style="margin-top: 10px;"><b>Sort by</b></h4>
+            <button class="uk-button-i uk-button-default">Our Recommendations<span class="i1" uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Our Recommendations</a></li>
+                    <li class="uk-active"><a href="#">Rating & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Price & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Distance & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Rate only</a></li>
+                    <li class="uk-active"><a href="#">Price only</a></li>
+                    <li class="uk-active"><a href="#">Distance only</a></li>
+                </ul>
+            </div>
+            <div class="uk-inline">
+                <button class="uk-button-in uk-button-default" type="button"><span uk-icon="icon:  warning"></span></button>
+                <div uk-dropdown style="background-color: black;color: white;">
+                    <p >The ranking results reflect your search criteria and our assessment of the attractiveness of the offer compared to other offers available on our site. It also reflects the compensation paid by the booking site</p>
+                </div>
+            </div>
+        </div>
+        <div class=" map uk-inline uk-light uk-visible@s" uk-parallax="bgy: 0" style="background-image: url('assets/images/map.jpg'); ">
+            <button class="more uk-button  uk-text-center uk-margin-auto "><span class="uk-margin-small-right location" uk-icon="location"></span>View Map</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                           <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/98/78/987831_v2.jpeg" alt="Image">
+                       </div>
+                       <div>
+                       <h3> Conrad Dubai</h3>
+                       <p><span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       Resort</p>
+                       <hr class="uk-divider-small">
+                       <a href="#"><span uk-icon="location"></span>1.7 km to Dubai Marina</a>                                      
+                       <hr class="uk-divider-small">
+                       <a href=""><button class="bcredit">9.1</button>Excellent(2457 reviews)          </a>                                  
+                   </div>   
+                   <div style="padding-left: 0;">
+                       <h3>Conrad</h3>
+                       <div>
+                       <h3 class="green">â‚¹11,342<a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                        </div>  
+                        <div class="padding">                              
+                       <a class="uk-button uk-button-default" href="">Agoda <br> â‚¹10,211 </a>
+                       <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹10,171  Booking.com</a></div>     
+                   </div>         
+                   </div>
+               </div>
+            </div>
+            </div>
+            </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/88/53/885389_v8.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Holiday Inn Dubai - Al Barsha</h3>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span> Hotel . Budget friendly</p>
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>7.3 km to Dubai Marina</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""><button class="bcredit">8.2</button>Vvery good(2140 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Holiday Inn</h3>
+                            <p>Pay at the property</p>
+                            <div>
+                            <h3 class="green">â‚¹3,286 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                              </div>  
+                              <div>                                  
+                            <a class="uk-button uk-button-default" href="">Agoda <br> â‚¹3,580 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹3,286  Holiday Inn</a></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            
+             <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/71/10/7110112_v1.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Radisson Blu Dubai Waterfront
+                            </h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                               Hotel</p>
+                           
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>3.8 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""><button class="bcredit">8.7</button>Excellent(459 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Hotels.com</h3>
+                            <p>Free cancellation</p>
+                            <div>
+                                <h3 class="green">â‚¹8,840 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                                   </div>       
+                                <div>                             
+                            <a class="uk-button uk-button-default" href="">Agoda<br> â‚¹8,874 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹8,840  Booking.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/10/51/10518648_v2.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Hilton Garden Inn Dubai Al Jadaf Culture</h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                               Hotel</p>
+                            <hr class="uk-divider-small">
+                            <a href="#"><span uk-icon="location"></span>5.1 km to city centre</a>                                      
+                            <hr class="uk-divider-small">
+                            <a href=""><button class="bcredit">8.3</button>Very good(195 reviews)          </a>                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Garden Inn</h3>
+                            <p>Free cancellation. Pay at the property</p>
+                            <div>
+                            <h3 class="green">â‚¹3,660 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                               </div>
+                            <div>                                   
+                            <a class="uk-button uk-button-default" href="">Agoda <br> â‚¹3.655</a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹3,632  Booking.com</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>       
+            <br>
+            <br> 
+        <p uk-margin>
+            <button class=" b uk-button uk-visible@s"><b>Show More hotels</b></button>
+        </p>
+        <br>
+        <div class="uk-grid-match uk-child-width-expand@s uk-visible@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p class="delhi">Hotels in Dubai</p>
+                    <h3><b>Top Hotels in Dubai - A Taste of Middle Eastern Glamour</b></h3>
+                    <p class="delhi">Discover Dubai â€“ the pearl of the Middle East and the most progressive and modern of the United Arab Emirates. Itâ€™s one of the fastest growing cities on earth and a hugely popular tourist and business destination. As the gateway between the East and West, Dubai is a truly unique destination; from the dry desert landscapes on the outskirts of the city, to the sky-scraping Burj Khalifa and artificial islands in the form of palm trees. Dubaiâ€™s distinctive culture is embodied by its top hotels, globally renowned for their glamour, comfort, style and six to seven-star luxury.</p>
+                    <p class="delhi">With the mix of traditional Arab heritage, hot weather all year round, and its booming trade and retail industry, Dubai is a flourishing tourist destination for people all around the world. Brazenly rich and glamorous, Dubai attracts affluent tourists and top businessmen all year round, hosting huge trade events such as Arab Health, top sporting events, music festivals and fashion shows. From golf courses and sand dunes to the worldâ€™s largest shopping centre, The Dubai Mall and Michelin star restaurants, thereâ€™s never a dull moment in Dubai.</p>
+                    <br>
+                    <h3><b>Dubai - A Tale of Two Cultures</b></h3>
+                    <p class="delhi">For a Middle Eastern country, Dubai is unashamedly Western. It has a thriving economy, with booming trade in tourism, real estate, IT and finance. With its unique position as a capitalist Emirate, Dubai has attracted people from all over the Middle East, Asia and Europe, creating a hugely cosmopolitan population. People flock to Dubai in the promise that it is a city like no other; ostentatious and glamorous where every visitor is a VIP. Dubai aims to stand out in the global market, with huge iconic structures like the Burj Khalifa and the huge artificial islands of the Palm Jebel Ali and Palm Jumeirah cementing Dubaiâ€™s world fame as a thriving and luxury holiday destination. With the famous wave-shaped<a href="#"> Jumeirah Beach Hotel </a>and the fortress-like structure of the <a href="#"> MÃ¶venpick Ibn Battuta Gate-Dubai </a>, Dubaiâ€™s top hotels are unrivalled for their extravagance and style.</p>
+                    <p class="delhi">But beneath the veneer of shiny shopping malls and five-star hotels like the<a href="#"> Sheraton Dubai Creek</a>, lies the remnants of the true, traditional Dubai. Explore the mosques and souqs of Bur Dubai, where local Emiratis go about their daily rituals and habits and the Muslim culture lives strong. This is a stark contrast to the new build office blocks of Deira, the modern residential areas of Al Barsha, and world-famous top hotels of Jumeirah.</p>
+                    <p class="delhi">Dubaiâ€™s top hotels are scattered all over the city; from sea-side hotels such as the<a href="#"> Grosvenor House </a>in the Dubai Marina, overlooking the huge man-made palm islands, to more centrally-located hotels like the<a href="#"> Burjuman Arjaan by Rotana</a>, near the popular Burjuman shopping mall. Dubai is a city of extremes, contrasts and cultural diversity.</p>
+                    <br>
+                    <h3><b>Getting to Dubai</b></h3>
+                    <p class="delhi">Getting to Dubai is relatively easy. With direct flights from London taking only about 7 hours and airlines providing increasingly competitive prices, Dubai is becoming a much more accessible holiday destination. Being a relatively small city, Dubai International Airport is well-linked to all areas of the city. The airport is about a 25 minute drive from Jumeirah and only 7 miles from the popular tourist area of Deira, where you can find some of Dubaiâ€™s top luxury hotels like the<a href="#"> Hyatt Regency</a>. With so many good hotels closely located to the airport, businessmen are just as well-catered for as the tourists.</p>
+                    <br>
+                    <h3><b>Price range</b></h3>
+                    <p class="delhi">from <b>â‚¹435</b> to <b> â‚¹3,64,085</b></p>
+                    <br>
+                    <h3><b>Top hotels</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/89/45/894539_v11.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Atlantis The Palm</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹21,067</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/89/21/8921_v6.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Hotel Dusit Thani Dubai</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹10,552</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/89/25/8925_v4.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Grand Hyatt Dubai</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹12,225</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/99/54/9954830_v1.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Hampton By Hilton Dubai Airport</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹5,830</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/50/96/5096182_v1.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Wynedham Dubai Marina</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹7,372</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/11/35/11351982.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel premier Inn Dubai Al Jadaff </a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹435</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Hotels</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Auris Inn Al Muhanna</a></td>
+                                <td><a href="#" class="top">Sofitel Dubai The Palm Resort & Spa</a></td>
+                                <td><a href="#" class="top">Holiday Inn Dubai - Al Barsha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Sea View</a></td>
+                                <td><a href="#" class="top">Fairmont Dubai</a></td>
+                                <td><a href="#" class="top">Novotel Dubai Al Barsha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Oyo 184 Central Paris Hotel</a></td>
+                                <td><a href="#" class="top">Five Palm Jumeirah Dubai</a></td>
+                                <td><a href="#" class="top">Hotel ibis Styles Dubai Jumeira</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Aloft Palm Jumeirah</a></td>
+                                <td><a href="#" class="top">Hilton Garden Inn Dubai Al Jadaf Culture Village</a></td>
+                                <td><a href="#" class="top">Hilton Dubai Al Habtoor City</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Montreal Hotel</a></td>
+                                <td><a href="#" class="top">Roda Al Murooj</a></td>
+                                <td><a href="#" class="top">Jumeirah Zabeel Saray</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Crowne Plaza Dubai Apartments</a></td>
+                                <td><a href="#" class="top">Rose Rayhaan by Rotana</a></td>
+                                <td><a href="#" class="top">Al Bandar Rotana - Creek</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Four Points by Sheraton Sheikh Zayed Road, Dubai</a></td>
+                                <td><a href="#" class="top">JW Marriott Marquis Hotel Dubai</a></td>
+                                <td><a href="#" class="top">Hilton Garden Inn Dubai Al Mina</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Armada BlueBay</a></td>
+                                <td><a href="#" class="top">Hyatt Regency Dubai</a></td>
+                                <td><a href="#" class="top">Al Khoory Inn</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Majestic City Retreat Hotel</a></td>
+                                <td><a href="#" class="top">Oaks Ibn Battuta Gate Dubai</a></td>
+                                <td><a href="#" class="top">FORM Dubai, a member of Design Hotelsâ„¢</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Anantara The Palm</a></td>
+                                <td><a href="#" class="top">Hotel Sun And Sands Down Town</a></td>
+                                <td><a href="#" class="top">Hotel Ramada Jumeirah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Four Points By Sheraton Downtown Dubai</a></td>
+                                <td><a href="#" class="top">OYO Home 144 Sheikh Zayed View Apartments</a></td>
+                                <td><a href="#" class="top">Hotel Golden Tulip Al Barsha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Holiday Inn Express Dubai - Safa Park</a></td>
+                                <td><a href="#" class="top">Hotel Movenpick Jumeirah Lakes Towers</a></td>
+                                <td><a href="#" class="top">Rixos The Palm Dubai</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Florida City Hotel Apartments</a></td>
+                                <td><a href="#" class="top">Al Bandar Arjaan by Rotana - Creek</a></td>
+                                <td><a href="#" class="top">The S Hotel Al Barsha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">OYO Home 161 Taj Grandeur 1 BHK Apartment Palm</a></td>
+                                <td><a href="#" class="top">Sofitel Dubai Jumeirah Beach</a></td>
+                                <td><a href="#" class="top">Dukes The Palm</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top"> Novotel Suites Dubai Mall of the Emirates</a></td>
+                                <td><a href="#" class="top">Arabian Park Hotel</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <img src="assets/images/beach.webp" width="1100" height="" alt="">
+                    <br>
+                    <h3 style="text-align: center;"><b>Beach Hotels</b></h3>
+                    <h3><b>Top Destinations</b></h3>
+                    <br>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/15/06/15068_v21.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Dubai</a></b></h3>
+                                    <p><a href="#" class="top">17189 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹842</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/64/98/64981_v33.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in New Delhi</a></b></h3>
+                                    <p><a href="#" class="top">8389 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹696</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/15/07/15076_v77.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Sharjah</a></b></h3>
+                                    <p><a href="#" class="top">379 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹2,756</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/64/93/64932_v75.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Goa</a></b></h3>
+                                    <h5><a href="#" class="top">25489 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹487</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/15/07/15074_v19.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Abu Dhabi</a></b></h3>
+                                    <h5><a href="#" class="top">667 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹4,510</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_258,q_auto,w_258/categoryimages/64/97/64971_v39.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Shimla</a></b></h3>
+                                    <h5><a href="#" class="top">2920 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,055</a></b></h4>
+                                </div>
+                            </div> 
+                        </a> 
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Destinations</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Mahabaleshwar</a></td>
+                                <td><a href="#" class="top">Mount Abu</a></td>
+                                <td><a href="#" class="top">Delhi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Jaipur</a></td>
+                                <td><a href="#" class="top">Lonavala</a></td>
+                                <td><a href="#" class="top">Udaipur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Manali</a></td>
+                                <td><a href="#" class="top">Calangute</a></td>
+                                <td><a href="#" class="top">Mussoorie</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Sharjah</a></td>
+                                <td><a href="#" class="top">Bengaluru</a></td>
+                                <td><a href="#" class="top">Ahmedabad</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Pune</a></td>
+                                <td><a href="#" class="top">Munnar</a></td>
+                                <td><a href="#" class="top">Ajman</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Nainital</a></td>
+                                <td><a href="#" class="top">Jaisalmer</a></td>
+                                <td><a href="#" class="top">Chandigarh</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Srinagar</a></td>
+                                <td><a href="#" class="top">Udhagamandalam</a></td>
+                                <td><a href="#" class="top">Chennai</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hyderabad</a></td>
+                                <td><a href="#" class="top">Amritsar</a></td>
+                                <td><a href="#" class="top">Mysore</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Agra</a></td>
+                                <td><a href="#" class="top">Darjeeling</a></td>
+                                <td><a href="#" class="top">Kodaikanal</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Velha Goa</a></td>
+                                <td><a href="#" class="top">Matheran</a></td>
+                                <td><a href="#" class="top">Panaji</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Puducherry</a></td>
+                                <td><a href="#" class="top">Jodhpur</a></td>
+                                <td><a href="#" class="top">Gurgaon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Alibaug</a></td>
+                                <td><a href="#" class="top">Kolkata</a></td>
+                                <td><a href="#" class="top">Kochi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Katra</a></td>
+                                <td><a href="#" class="top">Shirdi</a></td>
+                                <td><a href="#" class="top">Kodagu</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Ras Al-Khaimah</a></td>
+                                <td><a href="#" class="top">Kathmandu</a></td>
+                                <td><a href="#" class="top">Wayanad</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Varanasi</a></td>
+                                <td><a href="#" class="top">Tirupati</a></td>
+                                <td><a href="#" class="top">Puri</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><b>Points of Interest - Dubai</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/19/66/1966661.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Bur Dubai</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/11/17/1117428.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Dubai Marina</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,f_auto,h_162,q_auto,w_300/itemimages/19/66/1966655.jpeg" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Deira</a></b></h3>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                    <br>
+                    <a href="#" class="top">Hotel Search</a><span uk-icon="triangle-right"></span><a href="#" class="top">United Arab Emirates</a><span uk-icon="triangle-right"></span><a href="#" class="top">Dubai</a><span uk-icon="triangle-right"></span><a href="#" class="top">Hotels in Dubai</a>
+                </div>
+             </div>
+        </div>
+        <br>
+    </div>
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+            <li><a href="#"><span uk-pagination-previous></span></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span uk-pagination-next></span></a></li>
+        </ul>
+</div>
+
+
+<app-footer></app-footer>
+

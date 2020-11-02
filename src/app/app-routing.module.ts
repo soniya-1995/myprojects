@@ -6,12 +6,34 @@ import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DropdownmenuComponent } from './components/dropdownmenu/dropdownmenu.component';
 import { HomeComponent } from './components/home/home.component';
+import { MumbaiComponent } from './components/mumbai/mumbai.component';
+import { DelhiComponent } from './components/delhi/delhi.component';
+import { BanglureComponent } from './components/banglure/banglure.component';
+import { DubaiComponent } from './components/dubai/dubai.component';
+import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [
   {
 
     path:"",
     component:HomeComponent
 
+  },
+  
+  {
+    path:"mumbai",
+    component:MumbaiComponent
+  },
+  {
+    path:"delhi",
+    component:DelhiComponent
+  },
+  {
+    path:"banglur",
+    component:BanglureComponent
+  },
+  {
+    path:"dubai",
+    component:DubaiComponent 
   },
   {
     path: "header",
@@ -21,6 +43,10 @@ const routes: Routes = [
   {
     path:"loginpage",
     component: LoginpageComponent 
+  },
+  {
+    path:"register",
+    component:RegisterComponent 
   },
   {
     path :"footer",

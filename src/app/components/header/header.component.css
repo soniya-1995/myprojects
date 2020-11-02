@@ -1,4 +1,13 @@
+.uk-subnav>*>:first-child {
+    text-transform: none;
+}
+.uk-navbar-nav>li>a{
+    text-transform: none;
+}
+.searchicon{
 
+color: #007FAD;
+}
 .uk-navbar{
     background: none;
     border-bottom: 2px solid #F5F5F6;
@@ -43,6 +52,7 @@ select:hover{
 }
 .uk-icon{
     border: none;
+    margin-top: 5px;
 }
 
 .mobile-menu .uk-active a{
@@ -86,11 +96,50 @@ border-bottom: 2px solid #F5F5F6;
 .mob-nav-icon3{
     margin-left:157px;
 }  
+
+
+/* responsive */
+@media (max-width:1198px) and (min-width:497px) {
+    .left-nav{
+        margin-left: -253px;
+    }
+}
+
+ @media (max-width:485px) and (min-width:320px) {
+    .left-nav{
+      display:none;
+    } 
+}
+
+@media (max-width:360px) and (min-width:320px) {
+    .scroll-menu{
+        overflow: auto;
+         white-space: nowrap;
+    }
+   
+    .scroll-menu :hover{
+        background: #007FAD;
+         }
+}
+
+
+@media (max-width:496px) and (min-width:485px) {
+    .left-nav{
+        margin-left: -262px;
+    }
+}
+
+@media (max-width:484px) and (min-width:320px) {
+    .left-nav{
+        margin-right: -233px;
+    }
+}
 @media (max-width:640px) and (min-width:300px) {
     .uk-margin-small-left  {
         display: none;
     }
 }
+
 
 
 

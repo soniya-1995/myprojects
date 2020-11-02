@@ -1,0 +1,680 @@
+<!-- Hotels in Mumbai -->
+<app-header></app-header>
+<div class="uk-container uk-hidden@s">
+    <div class="uk-margin">
+        <button class="ind uk-button-small uk-button-default uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Hotels in Mumbai, India</button>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Mumbai online</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Mumbai!</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="search-form">
+    <form action="#" method="post">
+        <div class="form-container">
+            <div class="form-widgets">
+                <div class="search">
+                    <span class="search-icon fa fa-search"></span>
+                    <input type="search" name="search" id="search" placeholder="Enter a hotel name or destination">
+                </div>
+            </div>
+            <div class="calender-form">
+                <button type="submit" class="check-in">
+                    <span class="flex">
+                        <span class="search-icon fa fa-calendar"></span>
+                        <span class="check-in">
+                            <span class="check-in-title">Check in</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <div class="calender-form check-out">
+                <button type="submit" class="check-out">
+                    <span class="flex">
+                        <span class="check-in">
+                            <span class="check-in-title">Check out</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <button class="search-room" type="submit">
+                <span class="flex">
+                    <span class="search-icon users fa fa-users"></span>
+                    <span class="room">
+                        <span class="room-head">1 Room</span>
+                        <span class="room-head check-in-place">2 Guests</span>
+                    </span>
+                </span>
+            </button>
+            <button class="search-btn" type="submit">
+                <span class="none-search fa fa-search"></span>
+                <span class="display-search">Search</span>
+            </button>
+        </div>
+    </form>
+</div>
+<div class="uk-container uk-visible@s">
+    <div class=" uk-column-1-5@s uk-column-divider">
+        <h3><b>Price/night</b></h3>
+        <p style="position: absolute;">+44,000</p>
+        <mat-slider min="1" max="400" step="1" value="1"></mat-slider>
+        <br>
+        
+        <h3><b>Accomidation</b></h3>
+        <p>All types<span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        
+        <h3><b>Guest rating</b></h3>
+        <p>All <span class="i" uk-icon="chevron-down"></span></p>
+        <br>
+        
+        <h3><b>Hotel location</b></h3>
+        <p>City centre<span class="i1" uk-icon="chevron-down"></span></p>
+        <br>
+        <h3><b>More Filters</b></h3>
+        <p>select<span class="i1" uk-icon="chevron-down"></span></p>
+    </div>
+</div>
+    
+
+<div class="uk-section-small uk-section-muted">
+    <div class="uk-container ">
+        <div uk-alert >
+            <div class="uk-card  uk-card-default uk-card-body uk-visible@m">
+                <a class="uk-alert-close" uk-close></a>
+                    <div class="uk-container">
+                        <h2 style="color: black;"><b>Hotels in Mumbai, India</b></h2>
+                        <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Mumbai online
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Mumbai!
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div uk-alert>
+            <div class="uk-grid uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <a class="uk-alert-close" uk-close></a>
+                      <p style="font-size: 16px;color: rgb(58, 58, 58);"><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#" style="color: rgb(126, 213, 241);"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#" style="color: rgb(126, 213, 241);">travel restrictions overview </a>for each country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-button-group">
+            <h4 style="margin-top: 10px;"><b>Sort by</b></h4>
+            <button class="uk-button-i uk-button-default">Our Recommendations<span class="i1" uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Our Recommendations</a></li>
+                    <li class="uk-active"><a href="#">Rating & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Price & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Distance & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Rate only</a></li>
+                    <li class="uk-active"><a href="#">Price only</a></li>
+                    <li class="uk-active"><a href="#">Distance only</a></li>
+                </ul>
+            </div>
+            <div class="uk-inline">
+                <button class="uk-button-in uk-button-default" type="button"><span uk-icon="icon:  warning"></span></button>
+                <div uk-dropdown style="background-color: black;color: white;">
+                    <p >The ranking results reflect your search criteria and our assessment of the attractiveness of the offer compared to other offers available on our site. It also reflects the compensation paid by the booking site</p>
+                </div>
+            </div>
+        </div>
+        <div class=" map uk-inline uk-light uk-visible@s" uk-parallax="bgy: 0" style="background-image: url('assets/images/map.jpg'); ">
+            <button class="more uk-button  uk-text-center uk-margin-auto "><span class="uk-margin-small-right location" uk-icon="location"></span>View Map</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container ">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                           <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/14/52/1452183_v1.jpeg" alt="Image">
+                       </div>
+                       <div>
+                       <h3> The Resort</h3>
+                       <p><span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       Resort</p>
+                       <hr class="uk-divider-small">
+                       <a href="#"><span uk-icon="location"></span>0.2 km away from beach</a>                                      
+                       <hr class="uk-divider-small">
+                       <a href=""><button class="bcredit">7.7</button> Good(1446 reviews)          </a>                                  
+                   </div>   
+                   <div style="padding-left: 0;">
+                       <h3>Agoda</h3>
+                       <p>Free cancellation</p>
+                       <div>
+                       <h3 class="green">â‚¹4,169 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                        </div>  
+                        <div class="padding">                              
+                       <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹4,841 </a>
+                       <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹4,169  Agoda</a></div>     
+                   </div>         
+                   </div>
+               </div>
+            </div>
+            </div>
+            </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                       <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/93/28/932823_v2.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Hotel Arma Court</h3>
+                            <p>
+                                <span class="fa fa-star checked"></span> Hotel</p>
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>4.2 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""><button class="bcredit">6.1</button>(653 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Agoda</h3>
+                            <p>Free cancellation</p>
+                            <div>
+                            <h3 class="green">â‚¹1,174 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                              </div>  
+                              <div>                                  
+                            <a class="uk-button uk-button-default" href="">Hotels.com <br> â‚¹1,570 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹1,174  Agoda</a></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            
+             <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/17/76/1776841_v2.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Hilton Mumbai International Airport</h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                               Hotel</p>
+                           
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>3.2 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                               <a href=""><button class="bcredit">8.3</button>Very good(871 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Hilton</h3>
+                            <div>
+                                <h3 class="green">â‚¹5,576 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                                   </div>       
+                                <div>                             
+                            <a class="uk-button uk-button-default" href="">Agoda<br> â‚¹5.299 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹5,272  Booking.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div>
+            <br>
+            
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/47/72/4772620_v1.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Taj Santacruz, Mumbai</h3>
+                            <p>
+                            Hotel</p>
+                            <hr class="uk-divider-small">
+                            <a href="#"><span uk-icon="location"></span>3.1 km from city centre</a>                                      
+                            <hr class="uk-divider-small">
+                            <a href=""><button class="bcredit">9.0</button>Excellent(240 reviews)          </a>                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Booking.com</h3>
+                            <p>Free cancellation. Pay at the property</p>
+                            <div>
+                            <h3 class="green">â‚¹6,168 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                               </div>
+                            <div>                                   
+                            <a class="uk-button uk-button-default" href="">Agoda <br> â‚¹6,168</a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹6,168  Booking.com</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>   
+<br>            
+        <p uk-margin>
+            <button class=" b uk-button uk-visible@s"><b>Show More hotels</b></button>
+        </p>
+        <br>
+        <br>
+        <div class="uk-grid-match uk-child-width-expand@s uk-visible@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p class="mumbai">Hotels in Mumbai</p>
+                    <h3><b>Make magical memories in the melting pot mayhem of Mumbai</b></h3>
+                    <p class="mumbai">Make no mistake; Mumbai is enormous. Sustaining more than 20 million industrious residents, this commercial powerhouse city constructed on reclaimed land on Indiaâ€™s west coast crackles with such energy that rush hour occasionally becomes indistinguishable from other times of day. Previously known as Bombay, eclectic Mumbai boasts fantastic architecture, amazing food, great shopping and World Heritage Sites. Moreover, it is home to Indiaâ€™s prolific Bollywood film industry. Amidst the organized chaos and contrasting economic fortunes on display in sweltering Mumbai, there are numerous hotels, including several near the international airport.</p>
+                    <br>
+                    <h3><b>Eat like a local</b></h3>
+                    <p class="mumbai">Cosmopolitan Mumbai is renowned for its mouth-watering food. Curry is well-liked by Mumbaikar locals, but many lip-smacking surprises remain in store for foodies who reckon they already know their Indian cuisine. Near your hotel you can usually taste some of Mumbaiâ€™s best food at the ubiquitous street stalls. These reassuringly popular eateries loved by locals from all walks of life are where social, religious and economic divisions in Mumbai melt away. Indeed, the sight of labourers snacking beside millionaires is not uncommon.</p>
+                    <p class="mumbai">The stalls assault the senses, selling refreshing mango lassi yoghurt-based drinks and hot tea plus kulfi ice cream and kebabs featuring meat or freshly-caught fish. Vegetarian Mumbai street snacks include vada pav potato burgers, deep-fried panipuri breads with delicate flavourings and dosa pancakes with chutney. Although most of Mumbaiâ€™s beaches are unsuitable for bathing, their fresh air makes them fashionable haunts for evening strolls and admiring sunsets over the Arabian Sea. The curved seafront promenade of Marine Drive plus the Chowpatty and Juhu beaches are routinely abuzz with food vendors celebrated for their bhel puri, comprising puffed rice, vegetables and tamarind sauce. Mumbaiâ€™s street eateries also exist in clusters or khau gallis, meaning â€œfood streetsâ€ in the local Marathi language. Examples include Carter Road off Bandra promenade, Ghatkopar, Mahim and Nariman Point. Additionally, Mumbai possesses some of India's finest high-end eateries located near the international airport or in posh hotels and commercial districts.</p>
+                    <br>
+                    <h3><b>Urban parks and ancient sites</b></h3>
+                    <p class="mumbai">For outdoor recreation, leave behind the hubbub of downtown Mumbai and head north to the sprawling tropical forest at Sanjay Gandhi National Park. This hilly suburban landscape rich in rare birds, butterflies and flowers is a haven for macaque monkeys and deer. There are crocodile and tiger enclosures, waterfalls and lakes, walking trails and even a narrow gauge railway. Donâ€™t miss the parkâ€™s astonishing Kanheri Caves, dating back to the 1st century BC. Painstakingly chiselled out of rock, they were once a centre of learning for Buddhist monks. Located on Elephanta Island in Mumbai Harbour are some even more impressive rock-hewn caves that originated in the 5th century. The World Heritage Site Elephanta Caves feature an unforgettable temple complex of shrines, courtyards and ornately carved stone statues honouring the Hindu god Shiva. Ferries to the island operate from the Gateway of India.</p>
+                    <br>
+                    <h3><b>Discover architectural gems and remarkable museums</b></h3>
+                    <p class="mumbai">Remarkable Mumbai overflows with historic landmarks, interesting museums, religious sites and wonderful architecture. In the hectic Bori Bunder district sits the striking World Heritage Site Chhatrapati Shivaji Terminus, which was completed during British rule in the 1880s. This massive colonial-era building showcasing Victorian Gothic Revival, Hindu and Islamic styles remains among Indiaâ€™s busiest railway stations. It is adorned with amazing details like domes, gargoyles, spires and stained glass. Cinema buffs might even recognize it as the location used for filming the Jai Ho song sequence in Danny Boyleâ€™s Oscar-winning movie Slumdog Millionaire. Another architectural gem in the neighbouring Apollo Bunder district is the beautiful Gateway of India arch, a favourite spot for waterside selfies. Meanwhile, the nearby Taj Mahal Palace Hotel, which was built in 1903, grandly combines Renaissance and Islamic elements. As a multi-faith metropolis, Mumbai hosts many places of worship. Perhaps the most impressive is the whitewashed Haji Ali Dargah mosque sitting in a bay in Mahalakshmi. Accessible by causeway at low tide, it contains a venerated tomb and attracts visitors of all faiths and none.</p>
+                    <p class="mumbai">Museumgoers will love the 1872-built Dr Bhau Daji Lad Mumbai City Museum in Byculla East. This superbly restored landmark displays artefacts about Mumbaiâ€™s history. At Mumbaiâ€™s biggest museum, the domed Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, there are exhibits detailing the fascinating history of India, including sculptures, paintings and weaponry. Another favourite Mumbai attraction is Khotachiwadi village in Girgaum. This heritage area characterized by historic Portuguese-style homes evokes a bygone era in Mumbai.</p>
+                    <br>
+                    <h3><b>A city of contrasts</b></h3>
+                    <p class="mumbai">Mumbaiâ€™s juxtaposition of rich and poor can startle newcomers. Both sides of Maharashtra Stateâ€™s pulsating capital can be explored independently or on organized tours. Popular tours include trips to Bollywood filming locations or the vast Dharavi slum, which also featured prominently in Slumdog Millionaire. To see Mumbaiâ€™s sights independently, try using the improving public transport system of trains, ferries, buses, rickshaws, taxis and a monorail.</p>
+                    <p class="mumbai">Upmarket areas of Mumbai brim with boutiques, modern shopping malls, fancy restaurants and glitzy nightspots where the cityâ€™s elite are entertained by Indian songs, live music and DJs. Cuffe Parade and Malabar Hill are two such districts. Indeed, Malabar Hill boasts the luscious Hanging Garden hilltop park plus one of the planetâ€™s priciest homes - the soaring Antilia in Altamount Road. Across town, shopaholics can lose themselves in bustling street bazaars selling textiles, flowers, jewellery, fashion, antiques and spices. Much-loved examples include Bhuleshwar Market, Crawford Market, Chor Bazaar and the vibrant Colaba Causeway area.</p>
+                    <br>
+                    <h3><b>Price range</b></h3>
+                    <p class="mumbai">from <b>â€Žâ‚¹698</b> to <b>â€Žâ‚¹27,593</b></p>
+                    <br>
+                    <h3><b>Top hotels</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/taj.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels The Taj Mahal Palace,Mumbai</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹20,159</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/universe.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels Universal Garden</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹436</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/spot.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Spot On 37551 Hotel High Tide</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹436</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/sagar.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Golden Sagar</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,439</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/radisson.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Radisson Mumbai Anderi Midc</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹7,505</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/arma.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Hotel Arma Court</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,754</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Hotels</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Collection O 30052 Chinmay Resort</a></td>
+                                <td><a href="#" class="top">OYO 28451 Apple Inn</a></td>
+                                <td><a href="#" class="top">Sai Leela Grand</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Starwood Residency</a></td>
+                                <td><a href="#" class="top">Spacious 2 Bedroom Aprtmt</a></td>
+                                <td><a href="#" class="top">Trident Nariman Point</a></td>
+                            </tr>
+                            <tr>            
+                                <td><a href="#" class="top">Janata Residency</a></td>
+                                <td><a href="#" class="top">Locomo Hostel - Mumbai Airport</a></td>
+                                <td><a href="#" class="top">FabExpress Alfa Galaxy Marol</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Holiday Inn Mumbai International Airport</a></td>
+                                <td><a href="#" class="top">The Lalit Mumbai</a></td>
+                                <td><a href="#" class="top">OYO 26583 Hotel Kohinoor Plaza</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Apartment In Mumbai - City Centre</a></td>
+                                <td><a href="#" class="top">Hotel Kohinoor Continental</a></td>
+                                <td><a href="#" class="top">Silver Moon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Airport International</a></td>
+                                <td><a href="#" class="top">Sofitel Mumbai BKC</a></td>
+                                <td><a href="#" class="top">JW Marriott Mumbai Juhu</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Grande 51</a></td>
+                                <td><a href="#" class="top">OYO 22919 Blue Roof Sea Side</a></td>
+                                <td><a href="#" class="top">Hotel Novotel Mumbai Juhu Beach</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">OYO 29018 The Oasis Resort</a></td>
+                                <td><a href="#" class="top">Urbanpod</a></td>
+                                <td><a href="#" class="top">Hotel Cosmo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">FabHotel Ascot International Mumbai International Airport</a></td>
+                                <td><a href="#" class="top">Aureole</a></td>
+                                <td><a href="#" class="top">Maharana Inn</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Goldfinch</a></td>
+                                <td><a href="#" class="top">The Grand Hyatt Mumbai</a></td>
+                                <td><a href="#" class="top">Chakala Andheri East</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Shadab Palace</a></td>
+                                <td><a href="#" class="top">Hotel Sea Princess</a></td>
+                                <td><a href="#" class="top">OYO 27751 Ashwarya Service Apartment</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Plaza Executive Kurla West</a></td>
+                                <td><a href="#" class="top">The Leela Mumbai</a></td>
+                                <td><a href="#" class="top">Treebo Trend Olive Inn BKC Kurla West</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Plaza Executive Kurla West</a></td>
+                                <td><a href="#" class="top">The Leela Mumbai</a></td>
+                                <td><a href="#" class="top">Treebo Trend Olive Inn BKC Kurla West</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Oyster Suite Andheri West</a></td>
+                                <td><a href="#" class="top">Kushala Executive Inn Niljee Gaon</a></td>
+                                <td><a href="#" class="top">Mumbai International</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">ibis Navi Mumbai</a></td>
+                                <td><a href="#" class="top">The Resort</a></td>
+                                <td><a href="#" class="top">FabHotel Sahar Garden Marol</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Seven Bandra</a></td>
+                                <td><a href="#" class="top">Right Choice Inn</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <img src="assets/images/beach.webp" width="1100" height="" alt="">
+                    <br>
+                    <h3 style="text-align: center;"><b>Beach Hotels</b></h3>
+                    <h3><b>Top Destinations</b></h3>
+                    <br>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/bombay.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Bombay</a></b></h3>
+                                    <h5><a href="#" class="top">8371 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹698</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/lonavala.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Lonavala</a></b></h3>
+                                    <h5><a href="#" class="top">3264 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,172</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/matheran.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Matheran</a></b></h3>
+                                    <h5><a href="#" class="top">314 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹3,151</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/maha.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Mahabaleshwar</a></b></h3>
+                                    <h5><a href="#" class="top">1890 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹875</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/aur.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Alibaug</a></b></h3>
+                                    <h5><a href="#" class="top">1724 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,505</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/pune.png" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Pune</a></b></h3>
+                                    <h5><a href="#" class="top">5400 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹836</a></b></h4>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Destinations</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Shirdi</a></td>
+                                <td><a href="#" class="top">Goa</a></td>
+                                <td><a href="#" class="top">Panchgani</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Nashik</a></td>
+                                <td><a href="#" class="top">Calangute</a></td>
+                                <td><a href="#" class="top">Aurangabad</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Mount Abu</a></td>
+                                <td><a href="#" class="top">Khandala</a></td>
+                                <td><a href="#" class="top">Lavasa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Udaipur</a></td>
+                                <td><a href="#" class="top">Ahmedabad</a></td>
+                                <td><a href="#" class="top">Jaipur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Daman</a></td>
+                                <td><a href="#" class="top">Delhi</a></td>
+                                <td><a href="#" class="top">Shimla</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Bengaluru</a></td>
+                                <td><a href="#" class="top">Velha Goa</a></td>
+                                <td><a href="#" class="top">Hyderabad</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Panaji</a></td>
+                                <td><a href="#" class="top">Ratnagiri</a></td>
+                                <td><a href="#" class="top">Munnar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Ganpatipule</a></td>
+                                <td><a href="#" class="top">Nagpur</a></td>
+                                <td><a href="#" class="top">Mysore</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Igatpuri</a></td>
+                                <td><a href="#" class="top">Udhagamandalam</a></td>
+                                <td><a href="#" class="top">Chennai</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Manali</a></td>
+                                <td><a href="#" class="top">Kolhapur</a></td>
+                                <td><a href="#" class="top">Mussoorie</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Nainital</a></td>
+                                <td><a href="#" class="top">Candolim</a></td>
+                                <td><a href="#" class="top">Dapoli</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Agra</a></td>
+                                <td><a href="#" class="top">Surat</a></td>
+                                <td><a href="#" class="top">Jaisalmer</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Kodaikanal</a></td>
+                                <td><a href="#" class="top">Puducherry</a></td>
+                                <td><a href="#" class="top">Diu</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Chandigarh</a></td>
+                                <td><a href="#" class="top">Kodagu</a></td>
+                                <td><a href="#" class="top">Indore</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Darjeeling</a></td>
+                                <td><a href="#" class="top">Silvassa</a></td>
+                                <td><a href="#" class="top">Kochi</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><b>Points of Interest - Mumbai</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/rail.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Mumbai Central Railway Station</a></b></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/airport.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Chhatrapati Shivaji International Airport</a></b></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/juhu.webp" width="370" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Juhu Beach</a></b></h3>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <br>
+                    <a href="#" class="top">Hotel Search</a><span uk-icon="triangle-right"></span><a href="#" class="top">India</a><span uk-icon="triangle-right"></span><a href="#" class="top">Maharastra</a><span uk-icon="triangle-right"></span><a href="#" class="top">Hotels in Mumbai</a>
+                </div>
+             </div>
+        </div>
+        <br>
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

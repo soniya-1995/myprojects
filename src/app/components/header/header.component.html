@@ -1,12 +1,39 @@
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-right navbar-mob">
         <img class="uk-hidden@l" src="assets/images/trivago.png" width="100" height="80" alt="image">
-        <a class="uk-hidden@l" style="margin-left: 150px;" href="loginpage" uk-icon="icon: user"></a>
-        <span class="uk-margin-small-left uk-hidden@l"><a href="loginpage" style="color: #000;">Log in</a></span>
+        <a class="uk-hidden@l" style="margin-left: 150px;" href="" uk-icon="icon: user"></a>
+        <span class="uk-margin-small-left uk-hidden@l">Log in</span>
         <a href="#" class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
-         <span class="uk-margin-small-left  uk-hidden@l"><a href=""></a>Menu</span>
-       
+         <span class="uk-margin-small-left  uk-hidden@l">Menu</span>
     </div>
+</nav>
+    <nav class="uk-navbar-container left-nav uk-margin uk-margin-remove-top uk-margin-remove-bottom" uk-navbar="mode: click">
+        <div class="uk-navbar-left" style="margin-left:250px;">
+            <ul class="uk-navbar-nav scroll-menu">
+                <li class="uk-active">
+                    <a href="#" style="color: rgb(0, 127, 173);border-bottom: 2px solid;"> 
+                        <span uk-icon="icon: search"></span>
+                        <!-- <img class="" src="http://www.michigandaily.com/sites/default/themes/tmd/img/icons/search_header.png" width="20" height="20" uk-svg> -->
+                       <b>Hotel search</b></a>
+                </li>
+                <li class="uk-active">
+                    <a href="#">
+                        <img src="http://image.flaticon.com/icons/png/512/67/67347.png" width="20" height="20" uk-svg>Discover</a>
+                </li>
+                <li class="uk-active">
+                    <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/transport-107/24/car-512.png" width="20" height="20" uk-svg>
+                        Car</a>
+                </li>
+                <li class="uk-active">
+                    <a href="#"> <img src="https://cdn3.iconfinder.com/data/icons/maps-and-navigation-line-2/48/78-512.png" width="20" height="20" uk-svg>
+                        Flight</a>
+                </li>
+                <li class="uk-active">
+                    <a href="#"> <img src="https://image.flaticon.com/icons/png/512/149/149399.png" width="20" height="20" uk-svg>
+                        Packages</a>
+                </li>    
+            </ul>
+        </div>
 
     <div class="uk-navbar-right">
         <ul class="uk-navbar-nav uk-visible@l">
@@ -25,96 +52,9 @@
                     </ul>
                 </div>
             </li> 
-            
-            <li class="uk-active">
-                <!-- <a class="uk-text-small uk-text-capitalize" href="portfolio"> USD
-                    <a href="" uk-icon="icon: chevron-down"></a> 
-                </a> -->
-               <div class="custom-select">
-                <select class="uk-text-small uk-text-capitalize select-box">
-                    <optgroup label="Top currencies">
-                    <option value="EUR">EUR-Euro</option>
-                    <option value="GBP">GBP-British Pound</option>
-                    <option value="USD">USD-US Dollar</option>
-                    </optgroup>
-                    <optgroup label="All currencies">
-                    <option value="AED">AED-Emirati Dirham</option>
-                    <option value="ARS">ARS-Argentina Pesos</option>
-                    <option value="AUD">AUD-Australia Dollars</option>
-                    <option value="AZN">AZN-Azerbaijani Manat</option>
-                    <option value="BGL">BGL-Bulgaria Lev</option>
-                    <option value="BHD">BHD-Bahraini Dinar</option>
-                    <option value="BRL">BRL-Brazil Real</option>
-                    <option value="CAD">CAD-Canada Dollars</option>
-                    <option value="CHF">CHF-Swiss Franc</option>
-                    <option value="CLP">CLP-Chilean Pesos</option>
-                    <option value="CNY">CNY-Chinese Yuan</option>
-                    <option value="COP">COP-Colombian Peso</option>
-                    <option value="CZK">CZK-Czech Republic Koruna</option>
-                    <option value="DKK">DKK-Denmark Kroner</option>
-                    <option value="DZD">DZD-Algeria Dinars</option>
-                    <option value="EGP">EGP-Egypt Pounds</option>
-                    <option value="EUR">EUR-Euro</option>
-                    <option value="GBP">GBP-British Pound</option>
-                    <option value="HKD">HKD-Hong Kong Dollars</option>
-                    <option value="HRK">HRK-Croatian Kuna</option>
-                    <option value="HUF">HUF-Hungary Forint</option>
-                    <option value="IDR">IDR-Indonesia Rupiah</option>
-                    <option value="ILS">ILS-Israel New Shekels</option>
-                    <option value="INR" selected="selected">INR-India Rupees</option>
-                    <option value="JOD">JOD-Jordan Dinar</option>
-                    <option value="JPY">JPY-Japan Yen</option>
-                    <option value="KRW">KRW-South Korea Won</option>
-                    <option value="KWD">KWD-Kuwaiti Dinar</option>
-                    <option value="KZT">KZT-Kazakhstani Tenge</option>
-                    <option value="LBP">LBP-Lebanese Pound</option>
-                    <option value="MAD">MAD-Morocco Dirhams</option>
-                    <option value="MDL">MDL-Moldovan Leu</option>
-                    <option value="MXP">MXP-Mexico Pesos</option>
-                    <option value="MYR">MYR-Malaysia Ringgit</option>
-                    <option value="NOK">NOK-Norway Kroner</option>
-                    <option value="NZD">NZD-New Zealand Dollars</option>
-                    <option value="OMR">OMR-Omani Rial</option>
-                    <option value="PEN">PEN-Peruvian nuevo Sol</option>
-                    <option value="PHP">PHP-Philippines Pesos</option>
-                    <option value="PLN">PLN-Polish Zloty</option>
-                    <option value="QAR">QAR-Qatari Riyal</option>
-                    <option value="ROL">ROL-Romania Leu</option>
-                    <option value="RUR">RUR-Russia Rubles</option>
-                    <option value="SAR">SAR-Saudi Arabia Riyal</option>
-                    <option value="SEK">SEK-Sweden Krona</option>
-                    <option value="SGD">SGD-Singapore Dollars</option>
-                    <option value="THB">THB-Thailand Baht</option>
-                    <option value="TND">TND-Tunisian Dinar</option>
-                    <option value="TRY">TRY-Turkey Lira</option>
-                    <option value="TWD">TWD-Taiwan Dollars</option>
-                    <option value="UAH">UAH-Ukrainian Hryvnia</option>	
-                    <option value="USD">USD-US Dollar</option>
-                    <option value="UYU">UYU- Uruguayan Peso</option>
-                    <option value="VND">VND- Vietnamese Dong</option>
-                    <option value="ZAR">ZAR-South Africa Rand</option>
-                </optgroup>
-            </select>
-            <div class="select-arrow"> 
-            <a href="" class="uk-arrow" uk-icon="icon: chevron-down"></a> 
-            </div>
-        </div>
-            </li>
-            <li class="uk-active">
-                <a class="uk-text-small uk-text-capitalize " href="service-page"> EN
-                </a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active "><a class="noHover" href="#">En-English</a></li>
-                        <li><a  class="noHover"  href="#">Es-Espanol</a></li>
-                       
-                    </ul>
-                </div>
-            </li> 
         </ul>
     </div>
-
-
+</nav>
 
 <div id="sidenav" uk-offcanvas="overlay: true" class="mobile-menu">
     <div class="uk-offcanvas-bar" style="width: 100%; background: #fff;">
@@ -123,7 +63,7 @@
             <div>
            
 <h4 class="uk-text-bold uk-margin-remove-top main-head uk-align-center" >
-    <a href="" uk-icon="icon:chevron-left" ratio="1.6"  style="color: #000;"></a>
+    <a href="" class="uk-margin-medium-right" uk-icon="icon:chevron-left" ratio="1.6"  style="color: #000;"></a>
     Menu</h4>
             </div>
           
@@ -145,19 +85,6 @@
             <li class="uk-active">
                 <a class="uk-text-small uk-text-capitaliz dropdown-text " href="#">Log in</a>
             </li>
-            <h4 class="uk-text-bold">Setttings</h4>
-            <li class="uk-active">
-                <a class="dropdown-text uk-text-small uk-text-capitalize" style="padding-bottom: 5px;" href="portfolio">
-                    USD
-                </a>
-            </li>
-            <li class="uk-active">
-                <a class="dropdown-text uk-text-small uk-text-capitalize" style="padding-bottom: 5px;" href="career">
-                    EN
-                </a>
-            </li>
-           
         </ul>
     </div>
 </div>
-</nav>

@@ -1,124 +1,185 @@
-.uk-alert{
-    background: none;
-    border: 1px solid #CDD0D2;
-    width: 85%;
+img{
+    height: 200px;
+}
+
+.cards{
+    margin-left: 7%;
+    margin-right: 7%;
+    /* width: 9; */
+}
+
+hr{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+h3,p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+#green{
+    background-color: rgb(14, 128, 10);
+    color: white;
+}
+.green{
+    color:  rgb(14, 128, 10);
+}
+.checked {
+    color: orange;
+  }
+
+.view{
+    background-color: rgb(14, 128, 10);
+   margin-right: 45%;
+   margin-left: 45%;
+   height: 40px;
+   /* width: 50px; */
+}
+.padding{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+div, a{
+    color: black;
+}
+.uk-container{
+    padding-right: 0;
+    padding-left: 0;
+}
+.bcredit{
+    border-radius: 25%;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(14, 128, 10);
+    margin: 0 0 0 0;
+}
+
+.uk-navbar-container{
+    background-color: rgb(240, 239, 239);
+}
+.i{ 
+    margin-left: 100px;
+}
+.i1{
+    margin-left: 50px;
+}
+.uk-grid{
     font-size: 14px;
-    padding: 14px 55px 7px 18px;
+    color: black;
 }
-.uk-alert a{
-    text-decoration:none;
-    color: #0093CA;
+.uk-button-i{
+    margin-left: 10px;
+    font-weight: 730;
+    height:50px;
+    background-color: white;
 }
-.uk-alert a:hover{
-    border-bottom: 1px solid;
-    color: #0093CA;
+.uk-button-in{
+    height:50px;
+    background-color: white;
 }
-
-
-.logo-trivago{
-    margin-left: 108px;
+.b{
+    color: white;
+    margin:auto;
+    display:block;
+    background-color: rgb(110, 109, 109);
 }
-.uk-flex{
-    align-items: center;
-    width: auto;
-    height: auto;
-    background: #F5F5F6;
-    padding:8px;
-    max-width:100%;
-    /* margin-left: 79px; */
+.map{
+    height: 50px;
+    width: 300px;
+    float: right;
     
 }
-
-.img-desc{
-    text-align: left;
-    width: 250px;
-    
+.more{
+    background-color: white;
+    color: black;    
+    font-weight: bold;
+    margin:auto;
+    margin-top: 6px;
+    display:block;
 }
-.img-desc a{
-    color: #000;
+.view{
+   background-color: rgb(14, 128, 10);
+   margin-right: 45%;
+   margin-left: 45%;
+   height: 40px;
+   
 }
-
-/* table */
-
-.uk-table{
-    width: 36vh;
-    padding: 0px 0px;
-    width: calc(50% - 10px);
-    float: left;
-    /* margin: 5px; */
-    /* display: inline-block; */
-    
+.uk-cards{
+    height: 10px;
+    width: 150px;
 }
-.uk-table-inter{
-    
-    width: 80vh;
-    padding: 0px 0px;
-    
-    /* display: inline-block; */
-    
+img{
+    height: 200px;
 }
 
-.uk-table td{
-    padding: 0px;
+#hotels{
+    margin-left: 10%;
+    margin-right: 10%;
+    /* width: 9; */
+}
+hr{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+h3,p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+#green{
+    background-color: rgb(14, 128, 10);
+}
+.green{
+    color:  rgb(14, 128, 10);
+}
+.checked {
+    color: orange;
+
+}
+.aa{
+    margin-left: 10px;
 }
 
-.table-data{
-    display: inline-block;
-    color: rgb(99, 157, 245);
-    font-size: 20px;
-    display: inline;
-}
-
-.heading{
-    font: outline;
-    font-size: 22px;
-    color: rgb(47, 132, 202);
-}
-
-.style{
-    width:500px;
-    height:150px;
-    line-height:3em;
-    overflow-y:scroll;
-    padding:5px;
-    background-color:white;
+.delhi{
+    font-family:Arial,Helvetica,Sans,Sans-Serif,"Sans Serif";
+    color: black;
     line-height: 1.5;
+    margin: 16px 0;
 }
-.inter{
-    font: outline;
-    color: rgb(54, 54, 54);
-    font-size: 15px;
-    padding: 18px;
+.location{
+    color: black;
 }
-.int{
-    font: outline;
-    color: rgb(54, 54, 54);
-    font-size: 14px;
+
+.top{
+    color: black;
+    margin-left: 10px;
+    line-height: 0%;
+    padding-bottom: 8%;
 }
-.uk-place{
-    display: inline;
+.uk-table{
+    line-height: 0%;
 }
-.uk-overflow-auto{
-    display: flex;
-    flex-wrap:nowrap;
-    justify-content: end;
+.deal{
+    text-align: right;
+    color: green;
+    margin-right: 10px;
 }
 
 
 
+/* search-form */
 
-/* formsearch */
 .search-form {
-    /* margin-left: 78px; */
-    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 151px;
+    max-width: 1151px;
+    margin-bottom: 25px;
     padding-left: 8px;
     padding-right: 8px;
     font-size: 11px;
     box-shadow: none;
     color: #000;
-    background: #f5f5f6;
     border-radius: 2px 2px 0 0;
-    border-top: 8px solid #f5f5f6;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;

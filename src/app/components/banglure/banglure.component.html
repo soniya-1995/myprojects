@@ -1,0 +1,675 @@
+<!-- Hotels in Bengaluru -->
+<app-header></app-header>
+<div class="uk-container uk-hidden@s">
+    <div class="uk-margin">
+        <button class="ind uk-button-small uk-button-default uk-hidden@l  uk-width-1-1 uk-margin-small-bottom">Hotels in Bengaluru, India</button>
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Bengaluru online</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Bengaluru!</li>
+                <li class="uk-active"><span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="search-form">
+    <form action="#" method="post">
+        <div class="form-container">
+            <div class="form-widgets">
+                <div class="search">
+                    <span class="search-icon fa fa-search"></span>
+                    <input type="search" name="search" id="search" placeholder="Enter a hotel name or destination">
+                </div>
+            </div>
+            <div class="calender-form">
+                <button type="submit" class="check-in">
+                    <span class="flex">
+                        <span class="search-icon fa fa-calendar"></span>
+                        <span class="check-in">
+                            <span class="check-in-title">Check in</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <div class="calender-form check-out">
+                <button type="submit" class="check-out">
+                    <span class="flex">
+                        <span class="check-in">
+                            <span class="check-in-title">Check out</span>
+                            <span class="check-in-place">-- / -- / ----</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <button class="search-room" type="submit">
+                <span class="flex">
+                    <span class="search-icon users fa fa-users"></span>
+                    <span class="room">
+                        <span class="room-head">1 Room</span>
+                        <span class="room-head check-in-place">2 Guests</span>
+                    </span>
+                </span>
+            </button>
+            <button class="search-btn" type="submit">
+                <span class="none-search fa fa-search"></span>
+                <span class="display-search">Search</span>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<div class="uk-container uk-visible@s">
+    <div class=" uk-column-1-5@s uk-column-divider">
+            <h3><b>Price/night</b></h3>
+            <p style="position: absolute;">+44,000</p>
+            <mat-slider min="1" max="400" step="1" value="1"></mat-slider>
+            <br>
+            <br>
+            <h3><b>Accomidation</b></h3>
+            <p>All types<span class="i" uk-icon="chevron-down"></span></p>
+            <br>
+            <br>
+            <h3><b>Guest rating</b></h3>
+            <p>All <span class="i" uk-icon="chevron-down"></span></p>
+            <br>
+            <br>
+            <h3><b>Hotel location</b></h3>
+            <p>City centre<span class="i1" uk-icon="chevron-down"></span></p>
+            <br>
+            <h3><b>More Filters</b></h3>
+            <p>select<span class="i1" uk-icon="chevron-down"></span></p>
+    </div>
+</div>
+        
+  
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <div uk-alert >
+            <div class="uk-card  uk-card-default uk-card-body uk-visible@m">
+                <a class="uk-alert-close" uk-close></a>
+                    <div class="uk-container">
+                        <h2 style="color: black;"><b>Hotels in Bengaluru, India</b></h2>
+                        <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Comprehensive hotel search for Bengaluru online
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Find a cheap hotel in Bengaluru!
+                            </div>
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="check"></span>Book at the ideal price!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div uk-alert>
+            <div class="uk-grid uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <a class="uk-alert-close" uk-close></a>
+                      <p style="font-size: 16px;color: rgb(58, 58, 58);"><b>Know before you go.</b>The restrictions surrounding COVID-19 change often. Please <a href="#" style="color: rgb(126, 213, 241);"> stay informed</a> before traveling. Stay safe. To help you further, we have put together a <a href="#" style="color: rgb(126, 213, 241);">travel restrictions overview </a>for each country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-button-group">
+            <h4 style="margin-top: 10px;"><b>Sort by</b></h4>
+            <button class="uk-button-i uk-button-default">Our Recommendations<span class="i1" uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Our Recommendations</a></li>
+                    <li class="uk-active"><a href="#">Rating & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Price & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Distance & Recommended</a></li>
+                    <li class="uk-active"><a href="#">Rate only</a></li>
+                    <li class="uk-active"><a href="#">Price only</a></li>
+                    <li class="uk-active"><a href="#">Distance only</a></li>
+                </ul>
+            </div>
+            <div class="uk-inline">
+                <button class="uk-button-in uk-button-default" type="button"><span uk-icon="icon:  warning"></span></button>
+                <div uk-dropdown style="background-color: black;color: white;">
+                    <p >The ranking results reflect your search criteria and our assessment of the attractiveness of the offer compared to other offers available on our site. It also reflects the compensation paid by the booking site</p>
+                </div>
+            </div>
+        </div>
+        <div class=" map uk-inline uk-light uk-visible@s" uk-parallax="bgy: 0" style="background-image: url('assets/images/map.jpg'); ">
+            <button class="more uk-button  uk-text-center uk-margin-auto "><span class="uk-margin-small-right location" uk-icon="location"></span>View Map</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/25/29/2529777_v1.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> DoubleTree Suites by Hilton Bangalore</h3>
+                            <p><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            Hotel</p>
+                            <hr class="uk-divider-small">
+                            <a href="#"><span uk-icon="location"></span>11.9 km to city centre</a>                                      
+                            <hr class="uk-divider-small">
+                            <a href=""><button class="bcredit">9.4</button>Excellent(511 reviews)          </a>                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Doubletree</h3>
+                            <div>
+                            <h3 class="green">â‚¹4,410 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                             </div> 
+                             <div class="padding">                                    
+                            <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹4,375 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹4,375  Booking.com</a> </div>    
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/75/66/7566748_v1.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> Conrad Bengaluru</h3>
+                            <p><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span></p>
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>2.8 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                            <a href=""><button class="bcredit">9.2</button>Excellent(45 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Conrad</h3>
+                               <div> <h3 class="green">â‚¹8,260 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                            </div>
+                            <div class="padding">                                           
+                            <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹7,840 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹7,830  Booking.com</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/13/08/13082084.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> OYO 36197 Royal Wood</h3>
+                            <p>House / Apartment</p>
+                            <hr class="uk-divider-small">               
+                                <a href="#"><span uk-icon="location"></span>5.8 km to city centre</a>                                  
+                            <hr class="uk-divider-small">               
+                            <a href=""><button class="bcredit">8.4</button>Very good(429 reviews)          </a>                                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Agoda</h3>
+                            <p>Free cancellation . Free breakfast</p>
+                              <div>  <h3 class="green">â‚¹798 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a></h3>
+                                 </div> 
+                                 <div class="padding">                                     
+                            <a class="uk-button uk-button-default" href="">OYO<br> â‚¹1,279 </a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹798  Agoda</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <div class="uk-card uk-card-default uk-card-body cards">
+                <div class="uk-section uk-section-large padding">
+               <div class="uk-container">
+                   <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/98/42/98422_v3.jpeg" alt="Image">
+                        </div>
+                        <div>
+                            <h3> The Park Bangalore</h3>
+                            <p><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            Hotel</p>
+                            <hr class="uk-divider-small">
+                            <a href="#"><span uk-icon="location"></span>2.7 km to city centre</a>                                      
+                            <hr class="uk-divider-small">
+                            <a href=""><button class="bcredit">7.5</button>Good(1294 reviews) </a>                                  
+                        </div>            
+                        <div style="padding-left: 0;">
+                            <h3>Agoda</h3>
+                            <p>Free cancellation</p>
+                            <div>
+                            <h3 class="green">â‚¹2,413 <a class="uk-button uk-button-default" id="green"href="">View Deal ></a> </h3>
+                            </div>        
+                            <div>                              
+                            <a class="uk-button uk-button-default" href="">Booking.com <br> â‚¹2,699</a>
+                            <a class="uk-button uk-button-default" href="">Our lowest price<br> â‚¹2,413  Agoda</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>        
+        <p uk-margin>
+            <button class=" b uk-button uk-visible@s"><b>Show More hotels</b></button>
+        </p>
+        <br>
+        <br>
+        <div class="uk-grid-match uk-child-width-expand@s uk-visible@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p class="bengaluru">Hotels in Bengaluru</p>
+                    <h3><b>Bengaluru: India's Silicon Valley</b></h3>
+                    <p class="bengaluru">
+                        Brash and bold Bengaluru â€“ the heart of India's IT industry â€“ is an undeniable bastion of modernity. It's success as a tech city has garnered it big business, international fame and a cosmopolitan atmosphere. It may lack the obvious charm of say, Jaipur or Agra, but this south Indian city is an attraction unto itself. Punctuated by parks, Bengaluru boasts flourishes of Victorian architecture and a selection of impressive temples along with superb malls and museums. These attractions â€“ along with a slick, sophisticated vibe â€“ pulls visitors to this sparkling metropolis like moths to a flame.</p>
+                    <br>
+                    <h3><b>Orientation and Layout</b></h3>
+                    <p class="bengaluru">Bengaluru â€“ sometimes known in English as Bangalore â€“ is the capital of the south Indian state of Karnataka, located in the country's Deccan Plateau region. While the city was established in the 16th Century, it saw major expansion under the British in the 19th Century. Much of the city's Victorian-era architecture as well as its parks and green spaces date from this period, but the Bangalore Fort â€“ which was begun in the late 16th Century â€“ gives new arrivals a glimpse into Bengaluru's early history. Using this core site as a guide, newcomers will note that the sights and attractions of modern Bengaluru radiate both north and south from here across the centre of the city. Likewise, travellers will also find that the bulk of hotels and sleeping accommodations in Bengaluru can be found in this central district. This core area is ringed by routes 48, 44 and 75 of India's National Highway System.</p>
+                    <br>
+                    <h3><b>Temples and Parks</b></h3>
+                    <p class="bengaluru">It might be best known as a huge IT hub, but Bengaluru is also studded by multiple Hindu temples and religious complexes, many of which have been constructed in the local Dravidian style. The city's Bull Temple â€“ perhaps its most famous religious landmark â€“ is located just south of the Bangalore Fort. Home to a local annual festival, the complex's famous bull is among the city's most visited shrines. For something different, travellers can make their way across town to the ISKCON Hare Krishna Temple. A blend of old and new influences, this massive complex affords visitors outstanding views of the city and an interesting insight into the wider Hare Krishna movement. If serenity is your thing, keep the feeling going at any one of the area's parks. Both the centrally located Lalbagh Botanical Garden and the airy Cubbon Park are your best bet for making the most of your time in India's Garden City.</p>
+                    <br>
+                    <h3><b>Museums and Malls</b></h3>
+                    <p class="bengaluru">For those who find themselves wilting in the tropical climate, Bengaluruâ€™s top-notch museums offer visitors the chance to beat the heat while still making the most of their time in the city. Fittingly, the Visvesvaraya Industrial and Technological Museum â€“ located in Cubbon Park â€“ features a host of interactive galleries exploring a range of physical science topics. Further to the west of the city centre, the Heritage Centre & Aerospace Museum has a good collection of vintage planes and helicopters on display, but if you really want to reach for the stars, head to the Jawahar Lal Nehru Planetarium for interesting lectures and daily star shows. The acquisition of knowledge is one thing, but travellers hoping to make more material gains are in luck. A shopperâ€™s paradise, newcomers can take their pick from any of the Bengaluruâ€™s retail outlets. UB City, Phoenix Marketcity and Orion malls are ultramodern venues while the vendors in Bengaluruâ€™s Commercial Street offer a flea market-type experience.</p>
+                    <br>
+                    <h3><b>Restaurants and Hotels in Bangalore</b></h3>
+                    <p class="bengaluru">Attracting workers from across India, the eating options in Bengaluru are varied. Chinese and Western fare are all on the table here as are regional Indian specialties. For something more local, the city is the home of the masala dosa, a pancake stuffed with potatoes. South Indian vegetarian dishes abound here, served up in tin trays at any of the cityâ€™s Udupi restaurants. However, visiting carnivores are guaranteed their meaty fix; tandoori chicken and kebabs are staples within the culinary repertoire of the cityâ€™s Muslim community.</p>
+                    <p class="bengaluru">Hungry travellers will find a selection of restaurants to the east of Cubbon Park. Likewise, visitors will note that Bangaloreâ€™s hotels are also concentrated in this part of the city. As well as larger hotel chains, those seeking accommodation in central Bangalore will find a number of independently run options. The B&Bs located on the cityâ€™s Intermediate Ring Road may offer a more budget-friendly alternative to the luxury hotels found in Bangaloreâ€™s core.</p>
+                    <br>
+                    <h3><b>Price range</b></h3>
+                    <p class="bengaluru">from <b>â‚¹518</b> to <b> â‚¹58,894â€Ž</b></p>
+                    <br>
+                    <h3><b>Top hotels</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/oyo.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels OYO 15358 Hotel Townhall</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹891</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/treebo.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels Treebo Trends president Suites</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹434</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/euo.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Euphoria</a></b></h3>
+                                    <br>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹1,190</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/tree.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Temple Tree</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹2,550</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/empire.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Hotel Empire International</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹1,193</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/pavilion.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotel Hotel The Chancery Pavilion</a></b></h3>
+                                    <span class=" aa fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹4,412</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Hotels</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Treebo Tryst Monarch Brigade Road</a></td>
+                                <td><a href="#" class="top">Krishna Cedar Serviced Apartment</a></td>
+                                <td><a href="#" class="top">Niche Suites</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Holiday Inn Express & Suites Bengaluru Racecourse</a></td>
+                                <td><a href="#" class="top">FabHotel 4 Seasons Silk Board Junction</a></td>
+                                <td><a href="#" class="top">Hyatt Centric MG Road Bangalore</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">FabHotel Arafa Inn Gandhinagar</a></td>
+                                <td><a href="#" class="top">The Pride Bangalore</a></td>
+                                <td><a href="#" class="top">The Elanza</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">ibis Bengaluru Hosur Road</a></td>
+                                <td><a href="#" class="top">The Waverly & Residences</a></td>
+                                <td><a href="#" class="top">Sreeniketanam Lodge</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Holiday Inn Express Bengaluru Whitefield ITPL</a></td>
+                                <td><a href="#" class="top">LaLiT Ashok Bangalore</a></td>
+                                <td><a href="#" class="top">Hotel City Centaur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Treebo Trend Edha Suites Koramangala</a></td>
+                                <td><a href="#" class="top">MÃ©lange Bangalore</a></td>
+                                <td><a href="#" class="top">Treebo Trend Greenwood Premier Suites Indiranagar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Royal Orchid Suites Bengaluru</a></td>
+                                <td><a href="#" class="top">Fairfield by Marriott Bengaluru Rajajinagar</a></td>
+                                <td><a href="#" class="top">OYO Townhouse 047 Kanakpura Road</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Treebo Trend Hibiscus Hebbal</a></td>
+                                <td><a href="#" class="top">JW Marriott Hotel Bengaluru</a></td>
+                                <td><a href="#" class="top">Nava Nidhi Comforts</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Lemon Tree Premier</a></td>
+                                <td><a href="#" class="top">St. Mark's</a></td>
+                                <td><a href="#" class="top">FabExpress Status Executive Rooms</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Holiday Inn Express Bengaluru Yeshwantpur</a></td>
+                                <td><a href="#" class="top">jÃ¼STa MG Road</a></td>
+                                <td><a href="#" class="top">The Grand Choice</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">The Leela Palace</a></td>
+                                <td><a href="#" class="top">OYO 3778 Hotel Pulkeshi</a></td>
+                                <td><a href="#" class="top">Taj M G Road, Bengaluru</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Melange Astris</a></td>
+                                <td><a href="#" class="top">Orchard Suites Sanky Road</a></td>
+                                <td><a href="#" class="top">FabExpress Avenue Inn Bangalore East Railway Station</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">OYO 10534 Hotel Kanishka</a></td>
+                                <td><a href="#" class="top">FabHotel Krishna Boutique Marathahalli</a></td>
+                                <td><a href="#" class="top">Treebo Trend Blu Orchid</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Housefinch Residency</a></td>
+                                <td><a href="#" class="top">Our Native Village</a></td>
+                                <td><a href="#" class="top">The Signature Inn</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hotel Nalapad's Bangalore International</a></td>
+                                <td><a href="#" class="top">OYO 14320 The Pride</a></td>
+                            </tr>                          
+                        </tbody>
+                    </table>
+                    <br>
+                    <h3><b>Top Destinations</b></h3>
+                    <br>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/mysore.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Mysore</a></b></h3>
+                                    <p><a href="#" class="top">1855 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹434</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/mumbai.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Mumbai</a></b></h3>
+                                    <p><a href="#" class="top">8389 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹695</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/kodagu.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Kodagu</a></b></h3>
+                                    <p><a href="#" class="top">2155 Hotels</a></p>
+                                    <h4 class="deal"><b><a href="#" class="deal" >deals from â‚¹1,196</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/goa.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Goa</a></b></h3>
+                                    <h5><a href="#" class="top">1890 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹475</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/udha.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Udhagamandalam</a></b></h3>
+                                    <h5><a href="#" class="top">1724 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹980</a></b></h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/madikeri.png" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Hotels in Madikeri</a></b></h3>
+                                    <h5><a href="#" class="top">5400 Hotels</a></h5>
+                                    <h4 class="deal"><b><a href="#" class="deal">deals from â‚¹836</a></b></h4>
+                                </div>
+                            </div> 
+                        </a> 
+                    </div>
+                    <br>
+                    <br>
+                    <h3><b>More Top Destinations</b></h3>
+                    <table class="uk-table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="top">Munnar</a></td>
+                                <td><a href="#" class="top">Chennai</a></td>
+                                <td><a href="#" class="top">Mangalore</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Calangute</a></td>
+                                <td><a href="#" class="top">Puducherry</a></td>
+                                <td><a href="#" class="top">Kodaikanal</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Mahabaleshwar</a></td>
+                                <td><a href="#" class="top">Chikkamagaluru</a></td>
+                                <td><a href="#" class="top">Tirupati</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Wayanad</a></td>
+                                <td><a href="#" class="top">Hyderabad</a></td>
+                                <td><a href="#" class="top">Lonavala</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Kochi</a></td>
+                                <td><a href="#" class="top">Coimbatore</a></td>
+                                <td><a href="#" class="top">Hampi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Pune</a></td>
+                                <td><a href="#" class="top">Velha Goa</a></td>
+                                <td><a href="#" class="top">Panaji</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Mahabalipuram</a></td>
+                                <td><a href="#" class="top">Pondicherry</a></td>
+                                <td><a href="#" class="top">Mount Abu</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Shimla</a></td>
+                                <td><a href="#" class="top">Delhi</a></td>
+                                <td><a href="#" class="top">Jaipur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Madurai</a></td>
+                                <td><a href="#" class="top">Udaipur</a></td>
+                                <td><a href="#" class="top">Udupi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Kerala</a></td>
+                                <td><a href="#" class="top">Thekkady</a></td>
+                                <td><a href="#" class="top">Kanyakumari</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Shimoga</a></td>
+                                <td><a href="#" class="top">Kovalam</a></td>
+                                <td><a href="#" class="top">Manali</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Matheran</a></td>
+                                <td><a href="#" class="top">Ahmedabad</a></td>
+                                <td><a href="#" class="top">Alappuzha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Bandipur</a></td>
+                                <td><a href="#" class="top">Hubli</a></td>
+                                <td><a href="#" class="top">Candolim</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Hassan</a></td>
+                                <td><a href="#" class="top">Yercaud</a></td>
+                                <td><a href="#" class="top">Kumarakom</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="top">Kushalnagar</a></td>
+                                <td><a href="#" class="top">Mussoorie</a></td>
+                                <td><a href="#" class="top">Nainital</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><b>Points of Interest - Bengaluru</b></h3>
+                    <div class="uk-child-width-1-3@m uk-child-width-1-3@s uk-grid-small" uk-grid>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/inter.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Bengaluru International Airport</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default"> 
+                                <div class="uk-card-media-bottom">
+                                    <img src="assets/images/ex.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Bengaluru International Exhibition Center</a></b></h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/images/lal.webp" width="360" alt="img">
+                                    <br>
+                                    <h3><b><a href="#" class="top">Lalbag Garden</a></b></h3>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                    <br>
+                    <a href="#" class="top">Hotel Search</a><span uk-icon="triangle-right"></span><a href="#" class="top">India</a><span uk-icon="triangle-right"></span><a href="#" class="top">Karnataka</a><span uk-icon="triangle-right"></span><a href="#" class="top">Hotels in Bengaluru</a>
+                </div>
+             </div>
+        </div>
+        <br>
+    </div>
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+            <li><a href="#"><span uk-pagination-previous></span></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span uk-pagination-next></span></a></li>
+        </ul>
+    </div>
+
+
+<app-footer></app-footer>
